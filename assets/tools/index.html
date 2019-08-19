@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../main.css"/>
+  <link rel="stylesheet" type="text/css" href="../type.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="container">
+    <div class="title">Alexey Ignatiev's home page</div>
+    <div class="pagenav">
+      [&nbsp;<a href="https://reason.di.fc.ul.pt/~aign/about/">about</a>&nbsp;|
+      <a href="https://reason.di.fc.ul.pt/~aign/publ/">publications</a>&nbsp;|
+      <a href="https://reason.di.fc.ul.pt/~aign/soft/">software</a>&nbsp;|
+      <a href="https://reason.di.fc.ul.pt/~aign/cv">cv</a>&nbsp;|
+      <a href="https://reason.di.fc.ul.pt/~aign/links/">links</a>&nbsp;]
+    </div>
+    <div class="subtitle">Research software tools</div>
+    <div class="acronym">Bica</div>
+    <div class="fullname">(Boolean simplifier for non-clausal formulae)</div>
+    <div class="tooldescr">Bica is a Python prototype implementation of the formula simplification approach proposed in [1]. Given a Boolean formula in an arbitrary form, it is able to compute a smallest size prime cover of the formula, i.e. to construct a smallest CNF/DNF representation comprising the formula's prime implicates/implicants, which is equivalent to the original formula. Being inspired by the well-known Quine-McCluskey procedure, this entirely SAT-based approach can deal with arbitrary Boolean formulae whereas the Quine-McCluskey procedure can minimize only DNF formulae. The word "bica" is Portuguese and means extremely strong and high-quality coffee (a synonym of espresso).<br><br>
+    [1] A. Ignatiev, A. Previti, and J. Marques-Silva (2015) SAT-Based Formula
+    Simplification. In: Proc. SAT 2015, pp.&#x202F;287&ndash;298.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>, <i>Alessandro Previti</i>
+    </div>
+    <div class="toollinks">
+      <b>Download:</b>
+      <a href=bica.tar.gz target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Gzipped TAR archive</a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">Forqes</div>
+    <div class="fullname">(Formula Quintessence extractor)</div>
+    <div class="tooldescr">This tool is a result of the work on smallest MUS (SMUS) extraction. It is based on MinUC, which is the previous best SMUS extractor originally published at SAT 2013, as well as efficient minimal hitting set dualization approach proposed in our CP 2015 paper. Given a CNF formula, forqes is able to compute one of its smallest MUSes if the formula is unsatisfiable, or one of its smallest MESes (SMESes, smallest minimal equivalent subformulae) if the formula is satisfiable.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>
+    </div>
+    <div class="toollinks">
+      <b>Download:</b>
+      <a href=forqes-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=forqes-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS Sierra x86-64 binary</a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">Hyper</div>
+    <div class="fullname">(Hypotheses finder)</div>
+    <div class="tooldescr">Hyper is a solver for the propositional abduction problem based on implicit hitting set enumeration.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>, <i>Antonio Morgado</i><br>
+    </div>
+    <div class="toollinks">
+      <a href=https://reason.di.fc.ul.pt/wiki/doku.php?id=hypers target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)"><b>Homepage</b></a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">Mint</div>
+    <div class="fullname">(Minimum Satisfying Assignment extractor)</div>
+    <div class="tooldescr">Mint is a Python prototype implementation of the minimum satisfying assignment solver proposed in [2]. Given an SMT formula in the SMTLIB format (version 2), it computes a model of the formula that assigns the smallest possible number of variables of the formula leaving all the other variables unassigned. The underlying algorithm is based on implicit hitting set approach and the minimal hitting set duality between "minimal existential subsets" and "minimal falsifying subsets" of a formula. The minimal hitting set engine is implemented as an incremental core-guided MaxSAT solver.<br><br>
+    [2] A. Ignatiev, A. Previti, and J. Marques-Silva (2016) On Finding Minimum
+    Satisfying Assignments. In: Proc. CP 2016, pp.&#x202F;287&ndash;297.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i>Alessandro Previti</i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i><br>
+    </div>
+    <div class="toollinks">
+      <b>Download:</b>
+      <a href=mint.tar.gz target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Gzipped TAR archive</a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">MinUC</div>
+    <div class="fullname">(Minimum Unsatisfiable Core finder)</div>
+    <div class="tooldescr">This tool is intended for solving the Smallest Minimal Unsatisfiable Subset (smallest MUS, SMUS) problem. Given an unsatisfiable CNF formula in DIMACS, it finds a smallest unsatisfiable subset of clauses using the CEGAR-based 2QBF approach.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i><a href=http://sat.inesc-id.pt/~mikolas/>Mikoláš Janota</a></i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>
+    </div>
+    <div class="toollinks">
+      <b>Download:</b>
+      <a href=minuc-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=minuc-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS X Mavericks x86-64 binary</a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">mkplot</div>
+    <div class="fullname">(a Python script to create cactus and scatter plots based on matplotlib)</div>
+    <div class="tooldescr">The mkplot script is designed to automate the process of creating cactus and scatter plots with the use of the <a href=http://matplotlib.org/>matplotlib plotting library</a>.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i><br>
+    </div>
+    <div class="toollinks">
+      <a href=https://github.com/alexeyignatiev/mkplot target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)"><b>GitHub repository</b></a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">MSCG</div>
+    <div class="fullname">(Core-guided MaxSAT solver)</div>
+    <div class="tooldescr">MSCG is a general-purpose MaxSAT solver participated in the <a href="http://maxsat.ia.udl.cat/">Ninth and Tenth Evaluations of Max-SAT Solvers</a>. Although it is mainly focused on core-guided MaxSAT solving, MSCG also incorporates some other MaxSAT algorithms based on iterative calls to a SAT oracle.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>, <i>Antonio Morgado</i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i>Carmine Dodaro</i>, <i><a href=http://sat.inesc-id.pt/~ines/>Inês Lynce</a></i>, <i><a href=http://sat.inesc-id.pt/~vmm/>Vasco Manquinho</a></i>
+    </div>
+    <div class="toollinks">
+      <b>Download (2014):</b>
+      <a href=mscg-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=mscg-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS X Mavericks x86-64 binary</a><br>
+      <b>Download (2015a):</b>
+      <a href=mscg15a-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=mscg15a-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS Sierra x86-64 binary</a><br>
+      <b>Download (2015b):</b>
+      <a href=mscg15b-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=mscg15b-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS Sierra x86-64 binary</a><br>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">PackUpHyb</div>
+    <div class="fullname">(Hybrid Package Upgradability solver)</div>
+    <div class="tooldescr">Given a CUDF package universe file and a MISC2012-compatible user request (see the MANCOOSI project <a href="http://www.mancoosi.org">website</a>), this tool finds either an exact or an approximate solution to the package dependency problem. The solver is built on top of recent MaxSAT algorithms and MCS-based MaxSAT approximation. In order to use approximation, one needs to make sure <a href=http://logos.ucd.ie/web/doku.php?id=mcsls>"mcsls2"</a> is available from the PATH environment variable.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i><a href=http://sat.inesc-id.pt/~mikolas/>Mikoláš Janota</a></i><br>
+      <b>Contributor(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i>
+    </div>
+    <div class="toollinks">
+      <b>Download:</b>
+      <a href=packuph-linux-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">Linux x86-64 binary</a>, <a href=packuph-macosx-x86-64 target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)">MacOS X Mavericks x86-64 binary</a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+    <div class="acronym">PySAT</div>
+    <div class="fullname">(a toolkit for SAT-based prototyping in Python)</div>
+    <div class="tooldescr">A Python library providing a simple interface to a number of state-of-art Boolean satisfiability (SAT) solvers and a few types of cardinality encodings. The purpose of PySAT is to enable researchers working on SAT and its applications and generalizations to easily prototype with SAT oracles in Python while exploiting incrementally the power of the original low-level implementations of modern SAT solvers.</div>
+    <div class="authors">
+      <b>Author(s):&nbsp;</b>
+      <i><a href=https://reason.di.fc.ul.pt/~aign/>Alexey Ignatiev</a></i>, <i>Antonio Morgado</i>, <i><a href=https://reason.di.fc.ul.pt/~jpms/>Joao Marques-Silva</a></i></br>
+    </div>
+    <div class="toollinks">
+      <a href=https://pysathq.github.io/ target="_blank" onclick="ga('send', 'event', 'Binary Downloads', 'Download', this.href)"><b>Webpage</b></a>
+    </div>
+    <hr style="height: 1px; border-width: 0; background-color: #ddd">
+
+    <span class="small">Apr 19, 2017 16:11:54 WET&nbsp;&nbsp;</span>
+  </div>
+</body>
+
+</html>
