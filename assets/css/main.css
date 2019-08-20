@@ -396,6 +396,8 @@ footer a:hover { color: #729fcf; }
 
 .center { text-align: center; }
 
+.justified { text-align: justify; }
+
 .post-header { margin-bottom: 40px; }
 
 .post-list { margin: 0; padding: 0; list-style: none; }
