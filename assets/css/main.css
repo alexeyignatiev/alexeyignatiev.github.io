@@ -423,6 +423,7 @@ footer a:hover { color: #729fcf; }
 .project a { color: #2e3436; }
 .project a:hover { color: #729fcf; text-decoration: none; }
 
+.profile { margin-left: 10px; }
 .profile img { box-shadow: 0 0 5px #828282; width: 100%; }
 
 .address { font-family: monospace; }
