@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAT/SMT/AR Summer School 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://alexeyignatiev.github.io/ssa-school-2019/js/jquery.min.js"></script>
+    <script src="https://alexeyignatiev.github.io/ssa-school-2019/js/bootstrap.min.js"></script>
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/syntax.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,300italic,400italic' rel='stylesheet' type='text/css'> -->
+<script type='text/javascript'>
+  /* global google */
+/* global MarkerClusterer */
+// eslint-disable-next-line no-unused-vars
+var jekyllMaps = (function() {
+  'use strict'
+  var clusterSettings = {}
+  var clusterReady = false
+  var mapReady = false
+  var options = {}
+  var data = []
+  var maps = []
+
+  return {
+    initializeMap: initializeMap,
+    initializeCluster: initializeCluster,
+    register: register
+  }
+
+  /**
+   * Setup Google Maps options and call renderer.
+   */
+  function initializeMap() {
+    options = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: new google.maps.LatLng(0, 0)
+    }
+    mapReady = true
+    render()
+  }
+
+  /**
+   * Register map data to be rendered once Google Maps API is loaded.
+   *
+   * @param string id
+   * @param Array locations
+   * @param Object settings
+   */
+  function register(id, locations, options) {
+    data.push({ id: id, locations: locations, options: options })
+    render()
+  }
+
+  /**
+   * Render maps data if Google Maps API is loaded.
+   */
+  function render() {
+    if (!mapReady) return
+
+    while (data.length > 0) {
+      var item = data.pop()
+      var bounds = new google.maps.LatLngBounds()
+      var mapOptions = Object.assign({}, options, item.options)
+      var map = new google.maps.Map(
+        document.getElementById(item.id),
+        mapOptions
+      )
+      var infoWindow = new google.maps.InfoWindow()
+      var markers = item.locations.map(createMarker)
+
+      map.fitBounds(bounds)
+      google.maps.event.addListenerOnce(map, 'idle', function() {
+        if (this.customZoom) this.setZoom(this.customZoom)
+      })
+      if (mapOptions.useCluster) {
+        maps.push({ map: map, markers: markers })
+        processCluster()
+      }
+    }
+
+    function createMarker(location) {
+      var position = new google.maps.LatLng(
+        location.latitude,
+        location.longitude
+      )
+      bounds.extend(position)
+      if (!mapOptions.showMarker) return false
+
+      var marker = new google.maps.Marker({
+        position: position,
+        title: location.title,
+        image: location.image,
+        popup_html: location.popup_html,
+        icon: location.icon || mapOptions.markerIcon,
+        url: markerUrl(mapOptions.baseUrl, location.url),
+        url_text: location.url_text,
+        map: map
+      })
+      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
+
+      return marker
+    }
+
+    function markerUrl(baseUrl, url) {
+      if (/^(https?|\/\/)/.test(url)) return url
+
+      return url.length > 0 ? baseUrl + url : ''
+    }
+
+    function markerPopup() {
+      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
+      if (this.popup_html.length > 0) {
+        content += this.popup_html
+      }
+      else {
+        var imageTag =
+          this.image.length > 0 &&
+          '<img src="' + this.image + '" alt="' + this.title + '"/>'
+        if (this.url.length > 0) {
+          var linkContent = imageTag || this.url_text || 'View'
+          content += '<a href="' + this.url + '">' + linkContent + '</a>'
+        } else if (imageTag) {
+          content += imageTag
+        }
+      }
+      content += '</div>'
+      infoWindow.setContent(content)
+      infoWindow.open(map, this)
+    }
+  }
+
+  function initializeCluster(settings) {
+    clusterReady = true
+    clusterSettings = settings || {}
+    processCluster()
+  }
+
+  function processCluster() {
+    if (!clusterReady) return
+
+    while (maps.length > 0) {
+      var obj = maps.pop()
+      // eslint-disable-next-line no-new
+      new MarkerClusterer(obj.map, obj.markers, {
+        gridSize: clusterSettings.grid_size || 25,
+        imagePath:
+          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
+      })
+    }
+  }
+})()
+/* Object.assign polyfill */
+if (typeof Object.assign !== 'function') {
+  Object.assign = function(target) {
+    'use strict'
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object')
+    }
+
+    target = Object(target)
+    for (var index = 1; index < arguments.length; index++) {
+      var source = arguments[index]
+      if (source != null) {
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key]
+          }
+        }
+      }
+    }
+    return target
+  }
+}
+
+</script>
+<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCFuKnuq-sqHaR4E_ar0xy0hmcxHQy0YIY&callback=jekyllMaps.initializeMap'></script>
+
+<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
+        onload='jekyllMaps.initializeCluster({})'></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="https://alexeyignatiev.github.io/ssa-school-2019/">SAT/SMT/AR Summer School 2019</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/">Home</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/register.html">Registration</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/schedule.html">Schedule</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/lectures.html">Lectures</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/location.html">Local Information</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/previous.html">Previous Schools</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h2 id="local-information">Local Information</h2>
+
+<p>The SAT/SMT/AR Summer School 2019 will take place at the <a href="https://tecnico.ulisboa.pt/en/">Instituto
+Superior Técnico (IST/UL)</a> of the
+<a href="https://www.ulisboa.pt/en/">University of Lisbon</a>. The university of
+Lisbon was founded in 1911 and it is known to be the <a href="https://en.wikipedia.org/wiki/University_of_Lisbon">largest
+university in
+Portugal</a>.
+Instituto Superior Técnico (IST/UL), well known by its short name
+“Técnico”, is the most reputed school of Engineering, Science and
+Technology in Portugal.</p>
+
+<div id="da2f6e7a-d43e-4d17-a0b3-d884f7012818" style="width:600px;height:400px;"></div>
+<script type="text/javascript">
+  jekyllMaps.register(
+    'da2f6e7a-d43e-4d17-a0b3-d884f7012818',
+    [{"latitude":"38.7363","longitude":"-9.14005","title":"Complexo Interdisciplinar","icon":null,"url":"https://tecnico.ulisboa.pt/en/about-tecnico/campus/alameda/","image":"","popup_html":""}],
+    {"baseUrl":"https://alexeyignatiev.github.io/ssa-school-2019","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"customZoom":16}
+  );
+</script>
+
+<p>Located in one of the central-most parts of Lisbon, the Alameda campus
+benefits from a transport network that facilitates mobility to all the
+areas of the city. In its vicinity, there are many shopping, leisure,
+culture, entertaining and sports areas. Alameda Campus is located at a
+convenient distance from hotels, restaurants and diverse cultural
+sites. Being close to the centre of Lisbon, Instituto Superior Técnico
+(IST/UL), is easily reached by metro, bus, taxi or car from any
+location in town, including the airport, which is only 10 minute taxi
+ride.</p>
+
+<p><img src="images/ist-photo.jpg" width="600px" alt="" /></p>
+
+<h3 id="lectures">Lectures</h3>
+
+<p>All lectures will be held in the Anfiteatro Abreu Faro do Complexo
+Interdisciplinar, which is located at the back side of IST/UL. Given
+the following map of the campus, the location is marked as shown
+below.</p>
+
+<p><img src="images/campus.png" alt="" /></p>
+
+<h3 id="accommodation">Accommodation</h3>
+
+<p>At this moment, the SAT/SMT/AR Summer School is not able to support
+student expenses related to accommodation. Students are encouraged to
+arrange suitable accommodation for themselves.</p>
+
+<p>Some of the best reasonably-priced hostels in the World can be found
+in Lisbon, right in the middle of the historic and night life
+district. There are plenty low-budget options in Lisbon starting from
+25 euros a night for a shared dorm to a 50 euros room. Check your
+favourite search service for accommodation options, e.g.
+<a href="https://www.booking.com/">Booking.com</a>,
+<a href="https://www.tripadvisor.com/">TripAdvisor</a> or
+<a href="https://www.airbnb.com/">Airbnb</a>.</p>
+
+<p>To find hostels in Lisbon, the following webpages can be useful:</p>
+
+<ul>
+  <li><a href="http://www.booking.com/hostels/city/pt/lisbon.en-gb.html">http://www.booking.com/hostels/city/pt/lisbon.en-gb.html</a></li>
+  <li><a href="http://www.hostelworld.com/hosteldetails.php/Lisboa-Central-Hostel/Lisbon/7003">http://www.hostelworld.com/hosteldetails.php/Lisboa-Central-Hostel/Lisbon/7003</a></li>
+  <li><a href="http://www.lisboacentralhostel.com/">http://www.lisboacentralhostel.com/</a></li>
+  <li><a href="http://www.livinlisbon.com/hostel/">http://www.livinlisbon.com/hostel/</a></li>
+  <li><a href="http://www.shiadohostel.com/">http://www.shiadohostel.com/</a></li>
+  <li><a href="http://www.inlifeportugal.com/">http://www.inlifeportugal.com/</a></li>
+  <li><a href="https://www.uniplaces.com/accommodation/lisbon">https://www.uniplaces.com/accommodation/lisbon</a></li>
+</ul>
+
+
+</div>
+
+
+</body>
+</html>
+

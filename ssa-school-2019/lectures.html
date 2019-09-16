@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAT/SMT/AR Summer School 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://alexeyignatiev.github.io/ssa-school-2019/js/jquery.min.js"></script>
+    <script src="https://alexeyignatiev.github.io/ssa-school-2019/js/bootstrap.min.js"></script>
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="https://alexeyignatiev.github.io/ssa-school-2019/css/syntax.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,300italic,400italic' rel='stylesheet' type='text/css'> -->
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="https://alexeyignatiev.github.io/ssa-school-2019/">SAT/SMT/AR Summer School 2019</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/">Home</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/register.html">Registration</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/schedule.html">Schedule</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/lectures.html">Lectures</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/location.html">Local Information</a></li>
+                    <li class="active"><a href="https://alexeyignatiev.github.io/ssa-school-2019/previous.html">Previous Schools</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h2 id="lectures">Lectures</h2>
+
+<p><br /></p>
+<h3 id="day-1-july-3">Day 1 <em>(July 3)</em></h3>
+
+<h4 id="1-keynote-talk-knowledge-compilation-principles-and-applications-by-adnan-darwiche-university-of-california-los-angeles-usa">1. Keynote talk <em><a href="slides/ad-satsmtar19-slides.zip">“Knowledge Compilation: Principles and Applications”</a></em> by <a href="http://web.cs.ucla.edu/~darwiche/">Adnan Darwiche</a> (University of California, Los Angeles, USA)</h4>
+
+<p>Knowledge compilation (KC) is a research area which aims to preprocess
+information to improve the time required to solve highly-demanding
+computational tasks (NP and Beyond NP problems). Pioneered more than two
+decades ago, KC is nowadays a very active field, being at the intersection of
+several areas of AI and computer science. I will discuss some key dimensions
+relating to KC: (1) the choice of a tractable language to compile into, which
+depends on its degree of tractability (operations it supports in polytime) and
+its succinctness (space efficiency of its representations); (2) the design of
+knowledge compilers; and (3) the applications of KC within AI, including
+probabilistic inference, machine learning and explanations.</p>
+
+<h4 id="2-computing-with-sat-oracles-by-joao-marques-silva-university-of-lisbon-portugal">2. <em><a href="slides/jms-satsmtar19-slides.pdf">“Computing with SAT Oracles”</a></em> by <a href="http://www.di.fc.ul.pt/~jpms/">Joao Marques-Silva</a> (University of Lisbon, Portugal)</h4>
+
+<p>Propositional SAT solvers are a success story of Computer Science. An academic
+curiosity until the early 90s, SAT solvers now find an ever increasing range
+of practical applications. The reason for this success are conflict-driven
+clause learning (CDCL) SAT solvers. This tutorial covers the use of CDCL SAT
+solvers as oracles for the class NP and it is organized into three main parts.
+The first part studies standard techniques for encoding constraints into
+propositional logic. The second part highlights the use of SAT oracles for
+solving computationally more challenging problems. The third part delves into
+practical applications of SAT oracles, highlights representative examples, and
+summarizes recent research trends.</p>
+
+<h4 id="3-introduction-to-smt-by-albert-oliveras-technical-university-of-catalonia-spain">3. <em><a href="slides/ao-satsmtar19-slides.pdf">“Introduction to SMT”</a></em> by <a href="https://www.cs.upc.edu/~oliveras/">Albert Oliveras</a> (Technical University of Catalonia, Spain)</h4>
+
+<p>This tutorial presents a basic overview of Satisfiability Modulo Theories
+(SMT), focusing mainly on the DPLL(T) approach but also giving some hints
+about some recent trends. We review the most interesting theories that SMT
+solvers can deal with and introduce the basic ingredients of a DPLL(T)-based
+SMT solver, including a description of the Nelson-Oppen combination method.</p>
+
+<h4 id="4-automated-reasoning-beyond-sat-and-smt-by-christoph-weidenbach-max-planck-institute-for-informatics-germany">4. <em><a href="slides/cw-satsmtar19-slides.pdf">“Automated Reasoning Beyond SAT and SMT”</a></em> by <a href="https://www.mpi-inf.mpg.de/departments/automation-of-logic/people/christoph-weidenbach/">Christoph Weidenbach</a> (Max Planck Institute for Informatics, Germany)</h4>
+
+<p>For SAT, the CDCL (Conflict Driven Clause Learning) calculus is currently
+considered to be the prime calculus deciding satisfiability. For SMT, the
+Nelson-Oppen theory combination together with CDCL(T) is currently considered
+to be the prime calculus deciding satisfiability. From a first-order logic
+with theories perspective, both approaches are dedicated to logics without
+first-order variables. I will show that the introduction of first-order
+variables implies the non-existence of a single prime calculus in the spirit
+of SAT or SMT. This holds already for decidable fragments of first-order logic
+with theories. Instead, different calculi based on the instantiation of
+variables, the approximation of formulas, an explicit partial model building,
+an implicit model building, and syntactic inference restrictions and
+combinations thereof represent the state-of-the-art in automated reasoning
+beyond SAT and SMT.</p>
+
+<p><br /></p>
+<h3 id="day-2-july-4">Day 2 <em>(July 4)</em></h3>
+
+<h4 id="1-conflict-driven-clause-learning-by-armin-biere-johannes-kepler-university-linz-austria">1. <em><a href="slides/ab-satsmtar19-slides.pdf">“Conflict-Driven Clause Learning”</a></em> by <a href="http://fmv.jku.at/biere/">Armin Biere</a> (Johannes Kepler University Linz, Austria)</h4>
+
+<p>This tutorial describes the most important ideas of SAT solvers based on
+conflict driven clause learning, which is the dominant solver paradigm in SAT
+applications. Basics techniques include clause learning, the notion of
+implication graph, as well as clause minimization. We further discuss restarts
+and garbage collecting useless learned clauses. Efficient data structures for
+boolean constraint propagation are essential too.</p>
+
+<h4 id="2-pragmatic-theory-combination-by-bruno-dutertre-csl-sri-international-usa">2. <em><a href="slides/bd-satsmtar19-slides.pdf">“Pragmatic Theory Combination”</a></em> by <a href="http://www.csl.sri.com/users/bruno/">Bruno Dutertre</a> (CSL, SRI International, USA)</h4>
+
+<p>Combining decision procedures is a key problem in satisfiability modulo
+theories. The talk will present the classic Nelson-Oppen solution to this
+problem, and extensions of this method. We will then discuss model-based
+combination methods that are implemented in state-of-the-art SMT solvers. We
+will focus on the common case of combining the theory of uninterpreted
+functions (QF_UF) with arithmetic and bitvector theories.</p>
+
+<h4 id="3-instantiation-based-automated-reasoning-for-first-order-logic-by-konstantin-korovin-university-of-manchester-uk">3. <em><a href="slides/kk-satsmtar19-slides.pdf">“Instantiation-Based Automated Reasoning for First-Order Logic”</a></em> by <a href="http://www.cs.man.ac.uk/~korovink/">Konstantin Korovin</a> (University of Manchester, UK)</h4>
+
+<p>Traditional automated theorem proving for first-order logic is based on
+monolithic first-order calculi such as resolution and superposition. In
+contrast, instantiation-based methods combine efficient SAT/SMT technology
+with first-order reasoning. In this lecture we will discuss theoretical
+aspects such as completeness of instantiation-based calculi for first-order
+logic, redundancy elimination, implementation details, and applications such
+as finite model finding, QBF and bounded model checking. We will also take a
+look at recent developments such abstraction refinement for first-order
+theorem proving.</p>
+
+<h4
+    id="4-using-smt-to-reason-about-amazon-web-services-by-cole-schlesinger-amazon-web-services-usa">4. <em><a href="slides/cs-satsmtar19-slides.pptx.gz">“Using SMT to Reason about Amazon Web Services”</a></em> by <a href="http://www.schlesinger.tech/">Cole Schlesinger</a> (Amazon Web Services, USA)</h4>
+
+<p>Amazon Web Services (AWS) uses and develops tools based on formal verification
+to reason about the security of systems that customers build on AWS and also
+to reason about the security of AWS itself. In this session, we will dive into
+how AWS uses SMT-based verification techniques to help customers reason about
+properties of their AWS deployments, such as access control and network
+reachability. We will also explore characteristics of AWS that make it
+amenable to such verification.</p>
+
+<p><br /></p>
+<h3 id="day-3-july-5">Day 3 <em>(July 5)</em></h3>
+
+<h4 id="1-sat-solvers-and-propositional-proof-complexity-by-robert-robere-rutgers-university-usa">1. <em><a href="slides/rr-satsmtar19-slides.pptx">“SAT Solvers and Propositional Proof Complexity”</a></em> by <a href="https://www.cs.toronto.edu/~robere/">Robert Robere</a> (Rutgers University, USA)</h4>
+
+<p>Modern SAT and SMT solvers are fantastically efficient on a wide variety of
+inputs, and they now routinely solve instances with a massive number of
+constraints and variables. This is, of course, despite the fact that SAT is
+NP-Complete, and so does not have an efficient (<em>polynomial-time</em>) algorithm
+unless P = NP, which is widely believed to be false. Clearly the theory of
+NP-Completeness is far too coarse to explain the behaviour of modern SAT
+solvers, and a more refined theoretical picture is needed.</p>
+
+<p>Enter propositional proof complexity, which is a theory that gives a much more
+refined analysis of SAT solvers. In a word, the “proof complexity” approach to
+studying SAT solvers is to consider the behaviour of SAT solvers on instances
+with no satisfying assignments, noting that any complete solver must report
+“UNSAT” when given such an instance as input. The execution trace of the
+solver on this input is then a proof (in fact, a resolution proof) that the
+formula is unsatisfiable. We can therefore study the behaviour of SAT solvers
+by instead studying the proofs that they produce, and this allows us to
+abstract away many of the complex heuristics and technical engineering that
+goes into these algorithms.</p>
+
+<p>In this talk we will give a survey of propositional proof complexity,
+emphasizing recent results studying SAT and SMT solvers from this perspective.
+No advanced background in complexity theory will be required.</p>
+
+<h4 id="2-smt-based-function-summarization-for-software-verification-by-natasha-sharygina-university-of-lugano-switzerland">2. <em><a href="slides/ns-satsmtar19-slides.pdf">“SMT-based Function Summarization for Software Verification”</a></em> by <a href="https://www.inf.usi.ch/faculty/sharygina/">Natasha Sharygina</a> (University of Lugano, Switzerland)</h4>
+
+<p>This lecture presents HiFrog, a fully featured function-summarization-based
+model checker that uses SMT as the modeling and summarization language. The
+tool supports several encoding precisions through SMT: uninterpreted
+functions, linear real/integer arithmetics, and propositional logic. It
+employs our flexible interpolation framework for the construction and the use
+of function summaries most suitable for incremental program verification. In
+addition the tool allows optimized traversal of reachability properties,
+counter-example-guided summary refinement, summary compression, and
+user-provided summaries. I will describe the use of the tool through the
+description of its architecture and a rich set of features, give the tool demo
+and compare it to our earlier work where we introduced the SAT-based function
+summarization approach. The presentation will be complemented by an
+experimental evaluation on the practical impact the different SMT precisions
+have on program verification.</p>
+
+<h4 id="3-parallel-automated-reasoning-by-maria-paola-bonacina-university-of-verona-italy">3. <em><a href="slides/mpb-satsmtar19-slides.pdf">“Parallel Automated Reasoning”</a></em> by <a href="http://profs.sci.univr.it/~bonacina/">Maria Paola Bonacina</a> (University of Verona, Italy)</h4>
+
+<p>This lecture surveys selected discoveries and ideas in parallel reasoning,
+with a focus on parallel and distributed strategies for mechanical theorem
+proving in first-order logic. The lecture is organized in four parts. The
+first part covers approaches to parallel theorem proving prior to the
+inception of the Clause-Diffusion method. The second part presents the
+Clause-Diffusion method, that played a key role in the evolution of parallel
+reasoning from the parallelization of inferences to the parallelization of
+search, which is the dominating paradigm today. The third part draws both
+historic and conceptual connections between parallel theorem proving in
+first-order logic and parallel satisfiability (SAT) solving. The fourth part
+discusses the potential for new forays in parallel model-based theorem
+proving.</p>
+
+<h4 id="4-systematic-software-analysis-using-sat-by-sarfraz-khurshid-university-of-texas-at-austin-usa">4. <em><a href="slides/sk-satsmtar19-slides.pdf">“Systematic Software Analysis Using SAT”</a></em> by <a href="http://users.ece.utexas.edu/~khurshid/">Sarfraz Khurshid</a> (University of Texas at Austin, USA)</h4>
+
+<p>This tutorial describes an approach for systematic analysis of software
+systems. The primary focus is on automated testing where the user describes
+desired tests using logical formulas and SAT solvers enumerate non-equivalent
+test inputs that embody high quality test suites. A key enabling technology
+is provided by the well-known Alloy modeling language and SAT-based tool-set.
+While the focus is on the central ideas at the core of the approach, the
+tutorial also presents some recent work that uses SAT for debugging and
+repair.</p>
+
+<p><br /></p>
+<h3 id="day-4-july-6">Day 4 <em>(July 6)</em></h3>
+
+<h4 id="1-sat-based-program-synthesis-by-ruben-martins-carnegie-mellon-university-usa">1. <em><a href="slides/rm-satsmtar19-slides.pdf">“SAT-based Program Synthesis”</a></em> By <a href="https://sat-group.github.io/ruben/">Ruben Martins</a> (Carnegie Mellon University, USA)</h4>
+
+<p>Program synthesis is expanding rapidly and getting a lot of attention from
+both industry and academia. The goal of program synthesis is to find a program
+that satisfies the user intent expressed in the form of some specification.
+Program synthesis has proven to be useful to both end-users and programmers.
+For instance, program synthesis has been used to automate tedious tasks that
+arise in everyday life, such as string manipulations in spreadsheets or data
+wrangling tasks in R. Program synthesis has also been used for improving
+programmer productivity by automatically completing parts of a program or
+helping programmers use complex APIs.</p>
+
+<p>This tutorial aims at showing how SAT technology and ideas can be used to
+synthesize real code. We will show how the synthesis problem of finding a
+sequence of Java APIs that satisfies a set of test cases can be encoded into
+SAT and solved via model enumeration. This approach works particularly well
+for libraries with many types. However, for programs that contain only one
+type (e.g. strings, tables), we need to augment this approach with
+specifications. We will show how these specifications can be used in a
+conflict-driven program synthesis framework. This framework introduces the
+notion of learning to program synthesis and opens new research directions that
+can push the boundaries of program synthesis.</p>
+
+<h4 id="2-optimization-modulo-theories-by-roberto-sebastiani-university-of-trento-italy">2. <em><a href="slides/rs-satsmtar19-slides.pdf">“Optimization Modulo Theories”</a></em> by <a href="http://disi.unitn.it/~rseba/">Roberto Sebastiani</a> (University of Trento, Italy)</h4>
+
+<p>Satisfiability Modulo Theories (SMT) is the problem of deciding the
+satisfiability of a (typically quantifier-free) first-order formula with
+respect to some decidable first-order theory and their combinations thereof.
+SMT engines are widely used as backend engines in many application domains.
+Many SMT problems of interest, however, require the capability of finding
+models that are optimal wrt. some objective functions. These problems are
+grouped under the umbrella term of Optimization Modulo Theories (OMT).</p>
+
+<p>This tutorial aims at providing an overview of the main problems, techniques,
+functionalities and applications of OMT, focusing on both expressivity and
+efficiency. Specific topics include, e.g., supporting objective functions
+expressed in distinct theories of interest; handling OMT incrementally;
+dealing with multiple objectives; dealing with important OMT sub-cases like
+Max-SMT. We briefly describe some interesting applications. Finally, we
+indicate some open problems and research directions.</p>
+
+<h4 id="3-first-order-interpolation-by-laura-kovács-vienna-university-of-technology-austria">3. <em><a href="slides/lk-satsmtar19-slides.pdf">“First Order Interpolation”</a></em> by <a href="https://forsyte.at/people/kovacs/">Laura Kovács</a> (Vienna University of Technology, Austria)</h4>
+
+<p>Craig Interpolation is an important technique in applications of software
+verification. Interpolants extracted from proofs of software correctness can,
+for example, be used to generate loop invariants. In this talk, I will discuss
+how interpolants from so-called local proofs can be efficiently constructed,
+using for example a first order prover. I will also describe a technique of
+generating and optimizing interpolants based on transformations over the
+so-called “grey area” of local proofs. While local proofs admit efficient
+interpolation algorithms, standard complete proof systems, such as
+superposition, for theories having the interpolation property are not
+necessarily complete for local proofs. In this talk, I will therefore also
+investigate interpolant extraction from non-local proofs in the superposition
+calculus and prove a number of general results about interpolant extraction
+and complexity of extracted interpolants.</p>
+
+<h4 id="4-deep-learning-for-theorem-proving-by-markus-rabe-google-usa">4. <em>“Deep Learning for Theorem Proving”</em> by <a href="https://people.eecs.berkeley.edu/~rabe/">Markus Rabe</a> (Google, USA)</h4>
+
+<p>In this talk I will summarize recent efforts in machine learning for automated
+reasoning and the work of the N2Formal research group at Google. Our mission
+is to build an artificial mathematician, one that can understand natural
+mathematics found in scientific articles and books, and translate it to formal
+representations. So far, we have built a machine learning environment based on
+the interactive theorem prover HOL Light and a neural theorem prover called
+DeepHOL. Given a statement to prove, DeepHOL automatically selects appropriate
+premises and tactics, just like a human mathematician would. Training DeepHOL
+using imitation and reinforcement learning already achieves state-of-the-art
+performance in higher-order reasoning.</p>
+
+</div>
+
+
+</body>
+</html>
+
