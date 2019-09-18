@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Computing With SAT Oracles</title>
+    </head>
+    <body>
+
+        <h1>Computing With SAT Oracles</h1>
+        <h2> Details</h2>
+
+
+        <h3>Brief Description</h3>
+        <p>
+        This tutorial overviews the uses of SAT solvers as oracles, when employed for solving a wide range of computational problems, and illustrates their use in several practical applications, including the recent uses in explaining non-interpretable machine learning models.
+        </p>
+
+        <h3>Long Description.</h3>
+        <p>
+         Propositional satisfiability (SAT) is a success story of computer science. The power of the conflict-driven clause learning (CDCL) paradigm underlying most of the state-of-the-art SAT solvers made them an irreplaceable tool-of-choice suitable for efficient industrial problem solving. Indeed, a SAT solver can be seen as a witness producing NP-oracle, which can be applied to solving decision problems in NP but also beyond NP, e.g. in higher levels of the polynomial hierarchy, as well as function and enumeration problems.
+        </p>
+        <p>
+        The mission of the tutorial is to give a comprehensive overview of the modern SAT solving technology and how SAT solvers are exploited for constraint problem solving, as well as for solving extensions and generalizations of SAT, i.e. when dealing with optimization and enumeration problems. Additionally, the tutorial will focus on applying SAT solvers as oracles to a variety of strategic practical applications ranging from graph optimization problems, model-based diagnosis to cooperative path-finding as well as verification and explanation of machine learning models. The tutorial will bring together the details of problem encodings into SAT, maximum and minimum satisfiability (MaxSAT/MinSAT), minimal unsatisfiability (MUS computation), quantified Boolean formulas (QBF), but also efficient SAT-based algorithms targeting the aforementioned problems.
+        </p>
+
+        <h3>Outline</h3>
+        <ol>
+            <li>
+            Basics of SAT solving, including brief overview of conflict driven clause learning SAT solvers.
+            </li>
+            <li>
+            Modeling with propositional logic, including encodings of cardinality and pseudo-boolean constraints.
+            </li>
+            <li>
+            Problem solving with SAT oracles, covering maximum satisfiability, minimal correction subsets, minimal unsatisfiable subsets, quantified boolean formulas, and enumeration problems.
+            </li>
+            <li>
+            Recent applications: explainable AI, cooperative pathfinding, model-based diagnosis, graph optimization problems, etc.
+            </li>
+        </ol>
+
+        <h3>Audience and Objectives</h3>
+        <p>
+            IJCAI participants interested in artificial intelligence, constraint programming, and its applications in machine learning.
+            The use of SAT solvers as oracles has enabled impressive inroads in solving a wide range of computational problems. These include well-known function problems, e.g. computing explanations and relaxations of overconstrained formulas, but also solving optimization, quantification and enumeration problems, to name a few. Recent applications of computing with SAT oracles include computing interpretable machine learning models, but also finding explanations for non-interpretable machine learning models. A tutorial on this topic offers advanced training in a range of technologies that finds an ever growing range of practical applications.
+            This tutorial introduces novices to a key topic in AI (SAT and constraint solving, and its applications), it motivates and explains how to use SAT solvers as backend solver(s) in different and emerging areas of AI, and it surveys and provides training in a common practice in AI.
+        </p>
+
+        <h3>Length</h3>
+        <p>
+        The tutorial has a duration of 1/2 day (two 1:45h slots).
+        </p>
+        <h3><a href="slides.pdf">Slides</a></h3>
+
+        <h2>Presenters</h2>
+        <ul>
+            <li>
+                <h4><a href="https://jpmarquessilva.github.io/">Joao Marques-Silva</a></h4>
+
+                Professor of Computer Science, University of Lisbon, Faculty of Science, Informatics Department, Edificio 6, Campo Grande, 1749-016 Lisboa, Portugal.
+                <br>
+                Background:
+                Extensive experience in the area of the tutorial. In the mid90s, I invented clause learning, as used in modern SAT solvers. Extensive list of publications in the topic over the last decade.
+            </li>
+            <li>
+                <h4><a href="https://alexeyignatiev.github.io/">Alexey Ignatiev</a></h4>
+                Researcher, University of Lisbon, Faculty of Science, Informatics Department, Edificio 6, Campo Grande, 1749-016 Lisboa, Portugal.
+                <br>
+                Background:
+                Comprehensive knowledge of the subject area. Applied the SAT technology to solving a variety of practical problems from a number of different domains. Developed a range of highly efficient state-of-the-art algorithms and tools for problem solving with the use of SAT oracles.
+            </li>
+            <li>
+                <h4><a href="https://reason.di.fc.ul.pt/wiki/doku.php?id=antonio.morgado">Antonio Morgado</a></h4>
+                Post-Doc Researcher,University of Lisbon, Faculty of Science, Informatics Department, Edificio 6, Campo Grande, 1749-016 Lisboa, Portugal.
+                <br>
+                Background:
+                Since my PhD worked in the area of Boolean Optimization using SAT solvers as the backend solver. Most active in the area of MaxSAT, with participation in the creation of new algorithms, currently in use within state-of-the-art MaxSAT solvers.
+            </li>
+        </ul>
+    </body>
+</html>
