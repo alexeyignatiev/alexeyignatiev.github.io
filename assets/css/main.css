@@ -433,7 +433,7 @@ footer a:hover { color: #729fcf; }
 .news h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .news table { border-collapse: collapse; width: 100%; }
 .news table .date { width: 19%; }
-.news table .announcement { width: 81%; }
+.news table .announcement { width: 81%; text-align: justify; }
 .news table tr { text-align: left; }
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
 
