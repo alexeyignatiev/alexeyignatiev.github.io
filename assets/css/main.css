@@ -466,8 +466,7 @@ footer a:hover { color: #729fcf; }
 .bibliography li { margin: 10px 0; position: relative; }
 .bibliography li span { display: block; }
 .bibliography li .title { font-weight: bold; }
-.bibliography li .author a { border-bottom: 1px dashed #729fcf; }
-.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
+.bibliography li .author a:hover { border-bottom: 1px dashed #729fcf; text-decoration: none; }
 .bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 .bibliography li a.abstract, .bibliography li a.bibtex { cursor: pointer; }
 .bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
