@@ -422,7 +422,7 @@ footer a:hover { color: #729fcf; }
 
 .link { font-weight: bold; margin: 0 0 -2.0ex 0; padding-top: -1ex; padding-bottom: 2.5ex; text-align: right; }
 
-.small-distance { margin-top: -0.1ex; margin-bottom: 1.5ex; }
+.small-distance { margin-top: -0.05ex; margin-bottom: 2ex; }
 
 .projects h2 { color: #729fcf; font-size: 32px; margin-bottom: 30px; text-align: center; }
 .projects li { margin: 10px 0; position: relative; }
