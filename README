@@ -1,0 +1,6 @@
+Do not forget that the PDF files used as preprints and slides as well as the
+tool distributions are located in a separate directory in:
+
+gravity:/nfs/Alexey/assets-webpage/
+
+and should be copied to "assets/".
