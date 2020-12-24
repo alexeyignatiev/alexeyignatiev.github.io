@@ -1,0 +1,793 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400i,700);
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap'); */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+/* @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700); */
+
+/* two main colors: alert and focus */
+.alert {
+    color: #7c011e;
+}
+
+.focus {
+    color: #65ab2f;
+    /* color: #51882f; */
+}
+
+.invisible {
+    color: #ffffff;
+    text-shadow: -1px -1px 1px rgba(100, 100, 100, 0.0);
+}
+
+.boldit {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mainpoint {
+    font-size: 200%;
+}
+
+.small {
+    font-size: 70%;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 70%;
+  color: #d3d7cf;
+}
+
+.smallandgap {
+    font-size: 70%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* body style */
+body {
+    font-size: 200%;
+    text-align: center;
+    font-family: PT Serif;
+    /* font-family: Merriweather; */
+    text-shadow: -1px -1px 1px rgba(100, 100, 100, 0.3);
+}
+
+/* width of all slides redefined */
+.step {
+    width: 1400px;
+}
+
+/* common style options */
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    font-size: 125%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+pre {
+    font-family: 'Fira Code';
+}
+
+/* individual style configuration */
+/* title configuration */
+#title h1 {
+    font-size: 280%;
+    margin-top: 1.0em;
+}
+#title h2 {
+    font-size: 180%;
+    /* margin-bottom: 2.0em; */
+    margin-bottom: 0.2em;
+    margin-top: 1.0em;
+}
+#title h3 {
+    font-size: 125%;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+#title h4 {
+    font-size: 85%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+#title img {
+    margin-bottom: 2.2em;
+}
+
+/* about-me configuration */
+#me1 p {
+    font-size: 100%;
+}
+#me5 h1 {
+    font-size: 150%;
+    margin-bottom: 1em;
+}
+#me5 p {
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+#me5 .large {
+    margin-top: 0.8em;
+    font-size: 160%;
+}
+
+/* motivation slides */
+#motivation0 {
+    font-size: 150%;
+}
+#motivation1 p {
+    font-size: 80%;
+    text-align: right;
+    color: #d3d7cf;
+}
+#motivation2 {
+    font-size: 150%;
+}
+#motivation3 {
+    font-size: 110%;
+}
+#motivation4 h1 {
+    font-size: 170%;
+    margin-top:3em;
+}
+#motivation5 h1 {
+    font-size: 170%;
+    margin-top:2.75em;
+}
+#motivation5_5 h1 {
+    font-size: 170%;
+    margin-top:2.55em;
+}
+#motivation6 h1 {
+    font-size: 170%;
+    margin-top:2.32em;
+}
+#motivation7 p {
+    font-size: 270%;
+}
+#motivation8 {
+    font-size: 170%;
+}
+#motivation8 img {
+    vertical-align: middle;
+}
+#motivation9 {
+    font-size: 170%;
+}
+#motivation11 {
+    width: 800px;
+    height: 160px;
+    border: 5px solid #edd400;
+    border-radius: 8px;
+}
+#motivation12 {
+    width: 600px;
+    height: 120px;
+    border: 5px solid #edd400;
+    border-radius: 8px;
+}
+#motivation13 {
+    width: 350px;
+    border: 5px solid #edd400;
+    border-radius: 8px;
+}
+#motivation14 {
+    width: 800px;
+    border: 5px solid #edd400;
+    border-radius: 8px;
+}
+#motivation15 {
+    width: 800px;
+    border: 5px solid #edd400;
+    border-radius: 8px;
+}
+#motivation16 p {
+    font-size: 80%;
+    text-align: right;
+    color: #d3d7cf;
+}
+#motivation17 {
+    font-size: 150%;
+}
+#motivation17 p {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    font-size: 90%;
+}
+#motivation17 .small {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    font-size: 60%;
+}
+
+/* turing award 2018 slide */
+#turing-award {
+    font-size: 120%;
+}
+#turing-award h1 {
+    margin-bottom: 0.8em;
+}
+#turing-award p {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    font-size: 90%;
+}
+#turing-award .copyright {
+    font-size: 70%;
+}
+
+/* approaches to XAI */
+#approaches {
+    font-size: 170%;
+}
+#approaches h1 {
+    margin-bottom: 1.0em;
+}
+#approaches p {
+    margin-top: 0.3em;
+}
+
+/* interpretable models */
+#interpretable0 {
+    font-size: 170%;
+}
+#interpretable1 {
+    font-size: 80%;
+}
+#interpretable1 h1 {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    font-size: 250%;
+}
+#interpretable1 table {
+  align: center;
+  margin-left: 12em;
+}
+#interpretable1 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#interpretable2 {
+    text-align: right;
+}
+#interpretable3 {
+    width: 800px;
+}
+#interpretable3 p {
+    text-align: left;
+}
+#interpretable4 {
+    font-size: 150%;
+}
+#interpretable4 .mainpoint {
+    font-size: 130%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+#interpretable4 .footnote {
+    font-size: 38%;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    color: #729fcf;
+}
+#interpretable5 {
+    font-size: 170%;
+}
+#interpretable5 h1 {
+    font-size: 170%;
+    margin-bottom: 1.5em;
+}
+
+/* initial work on XPlainer (AAAI 2019) */
+#xplainer0 {
+    font-size: 170%;
+}
+#xplainer0_5 {
+    font-size: 140%;
+}
+#xplainer0_5 h2 {
+    margin-bottom: 1.5em;
+}
+#xplainer0_5 p {
+    font-size: 140%;
+    margin-top: -0.3em;
+}
+#xplainer0_5 .large {
+    font-size: 170%;
+    margin-top: 0.0em;
+}
+#xplainer2 {
+    width: 350px;
+    height: 350px;
+    font-size: 120%;
+    color: #3465a4;
+}
+#xplainer3 {
+    width: 350px;
+    height: 350px;
+    font-size: 120%;
+    color: #4e9a06;
+}
+#xplainer4 {
+    width: 400px;
+    height: 350px;
+    font-size: 120%;
+    color: #75507b;
+}
+#xplainer5 {
+    height: 350px;
+    font-size: 170%;
+    align: right;
+    color: #a40000;
+}
+#xplainer6 {
+    font-size: 140%;
+}
+#xplainer7 {
+    font-size: 170%;
+}
+#xplainer7 p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+#xplainer8 {
+    text-align: left;
+    font-size: 170%;
+    font-family: 'Fira Code';
+    width: 1150px;
+}
+#xplainer9 {
+    font-size: 93%;
+}
+#xplainer9 .footnote {
+    margin-top: 2.5em;
+    color: #729fcf;
+    font-size: 60%;
+}
+#xplainer9 .mainpoint {
+    font-size: 200%;
+    color: #a40000;
+}
+#xplainer10 {
+    font-size: 150%;
+}
+#xplainer11 {
+    font-size: 170%;
+    text-align: left;
+}
+#xplainer11 .small {
+    font-size: 70%;
+    margin-left: 2.0em;
+}
+#xplainer11 li {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer11 ol {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer12 {
+    font-size: 50%;
+    width: 800px;
+}
+#xplainer12 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer13 {
+    font-size: 50%;
+    width: 800px;
+}
+#xplainer13 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer14 {
+    font-size: 50%;
+    width: 800px;
+}
+#xplainer14 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer15 {
+    font-size: 50%;
+    width: 800px;
+}
+#xplainer15 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#xplainer16 {
+    font-size: 145%;
+}
+#xplainer17 {
+    font-size: 100%;
+    text-align: left;
+    width: 1300px;
+}
+#xplainer17 p {
+    font-size: 140%;
+    margin-top: 0.8em;
+}
+#xplainer17 tt {
+    font-family: 'Fira Code';
+    font-size: 80%;
+}
+#xplainer17 li {
+    margin-top: -0.3em;
+    margin-bottom: -0.3em;
+}
+#xplainer17 ol {
+    margin-top: -0.3em;
+    margin-bottom: -0.3em;
+}
+#xplainer17 .footnote {
+    margin-top: 2.0em;
+    color: #729fcf;
+    font-size: 52%;
+}
+#xplainer18 h1 {
+    margin-bottom: 1.0em;
+}
+#xplainer19 {
+    font-size: 170%;
+}
+#xplainer19 h1 {
+    margin-bottom: 1.2em;
+}
+#xplainer20 {
+    font-size: 170%;
+}
+#xplainer20 h1 {
+    font-size: 190%;
+    margin-bottom: 1.5em;
+}
+#xplainer20 .mainpoint {
+    margin-top: 1.0em;
+    font-size: 150%;
+}
+
+/* quality assessment (submissions to KDD 2019 and SAT 2019) */
+#assess0 {
+    font-size: 170%;
+}
+#assess0 h2 {
+    margin-bottom: 1.5em;
+}
+#assess1 {
+    font-size: 170%;
+}
+#assess1 h1 {
+    margin-bottom: 0.8em;
+}
+#assess1 .footnote {
+    font-size: 38%;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    color: #729fcf;
+}
+#assess3 h1 {
+    font-size: 170%;
+    margin-left: 11em;
+    margin-bottom: 0em;
+}
+#assess3 p {
+    font-size: 90%;
+}
+#assess3 table {
+    margin-left: 21em;
+}
+#assess3 td {
+   text-align: left;
+}
+#assess4 h1 {
+    font-size: 170%;
+    margin-left: 9.4em;
+    margin-bottom: 0em;
+}
+#assess4 p {
+    font-size: 90%;
+}
+#assess4 table {
+    margin-left: 21em;
+}
+#assess4 td {
+   text-align: left;
+}
+#assess5 h1 {
+    font-size: 170%;
+    margin-left: 11em;
+    margin-bottom: 0em;
+}
+#assess5 p {
+    font-size: 90%;
+}
+#assess5 table {
+    margin-left: 21em;
+}
+#assess5 td {
+    text-align: left;
+}
+#assess6 {
+    font-size: 170%;
+}
+#assess6 h1 {
+    margin-bottom: 1.2em;
+}
+#assess6 p {
+  margin-top: 0.0em;
+}
+#assess6 img {
+  margin-top: 0.6em;
+}
+#assess7 {
+    font-size: 140%;
+}
+#assess8 {
+    text-align: left;
+    font-size: 150%;
+    width: 1150px;
+}
+#assess9 {
+    text-align: left;
+    font-size: 150%;
+    width: 1150px;
+}
+#assess10 {
+    text-align: left;
+    font-size: 150%;
+    width: 1150px;
+}
+#assess11 table {
+    margin-left: 9em;
+}
+#assess11 td {
+   text-align: left;
+}
+#assess11 img {
+    margin-top: 1.0em;
+    margin-bottom: 0.4em;
+}
+#assess11 .large {
+    font-size: 200%;
+    margin-bottom: 0.0em;
+}
+#assess12 {
+    text-align: left;
+    font-size: 150%;
+    width: 1150px;
+}
+#assess12 h1 {
+    font-size: 170%;
+    margin-bottom: 1.4em;
+}
+#assess13 {
+    font-size: 170%;
+}
+#assess13 h1 {
+    margin-bottom: 1.4em;
+}
+#assess13 p {
+    margin-top: 0.7em;
+    font-size: 110%;
+}
+#assess14 table {
+    align: center;
+    font-size: 85%;
+    margin-left: 0.6em;
+}
+#assess14 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#assess14 .table-header {
+    margin-left: 9.0em;
+    margin-bottom: 0.2em;
+    font-size: 130%;
+}
+#assess14 .footnote {
+    font-size: 50%;
+    margin-top: 6.5em;
+    margin-bottom: 0.2em;
+    color: #729fcf;
+}
+#assess15 {
+    font-size: 140%;
+}
+#assess16 {
+    font-size: 130%;
+}
+#assess16 .large {
+    margin-top: 0.5em;
+    font-size: 160%;
+}
+#assess17 {
+    font-size: 90%;
+}
+#assess17 p {
+    margin-top: 0.5em;
+}
+#assess17 .footnote {
+    font-size: 57%;
+    margin-top: 4.5em;
+    margin-bottom: 0.2em;
+    color: #729fcf;
+}
+
+/* final conclusions */
+#conclusions0 {
+    font-size: 170%;
+}
+#conclusions1 {
+    font-size: 160%;
+}
+#conclusions1 h1 {
+    margin-bottom: 0.8em;
+}
+#conclusions1 p {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+}
+#conclusions1 .large {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 150%;
+}
+#conclusions2 {
+    font-size: 180%;
+}
+#conclusions2 h1 {
+    margin-bottom: 0.8em;
+}
+#conclusions2 p {
+    margin-top: 0.8em;
+    margin-bottom: 0.0em;
+}
+#conclusions2 .small {
+    margin-top: 0.3em;
+}
+
+/* connection between adversarial examples and explanations */
+#connection1 h1 {
+    font-size: 150%;
+    margin-bottom: 1.5em;
+}
+#connection1 {
+    font-size: 170%;
+    margin-bottom: 1em;
+}
+#connection1 p {
+    margin-bottom: 1em;
+}
+#connection2 h1 {
+    font-size: 150%;
+    /* margin-top: -4em; */
+    margin-bottom: 1em;
+}
+#connection2 {
+    font-size: 170%;
+    /* margin-bottom: 1em; */
+}
+#connection2 p {
+    margin-bottom: -0.4em;
+}
+#connection2 table {
+    margin-left: 1.5em;
+    margin-bottom: 1.em;
+}
+#connection2 .mainpoint {
+    /* margin-top: 1.5em; */
+    font-size: 120%;
+    /* font-weight: bold; */
+}
+
+#squo0 {
+    font-size: 170%;
+}
+#squo0 h2 {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+#squo1 {
+    font-size: 170%;
+}
+#squo1 h1 {
+    margin-bottom: 0.8em;
+}
+#squo1 .footnote {
+    font-size: 38%;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    color: #729fcf;
+}
+#squo3 h1 {
+    font-size: 170%;
+    margin-left: 11em;
+    margin-bottom: 0em;
+}
+#squo3 p {
+    font-size: 90%;
+}
+#squo3 table {
+    margin-left: 21em;
+}
+#squo3 td {
+   text-align: left;
+}
+#squo4 h1 {
+    font-size: 170%;
+    margin-left: 9.4em;
+    margin-bottom: 0em;
+}
+#squo4 p {
+    font-size: 90%;
+}
+#squo4 table {
+    margin-left: 21em;
+}
+#squo4 td {
+   text-align: left;
+}
+#squo5 h1 {
+    font-size: 170%;
+    margin-left: 11em;
+    margin-bottom: 0em;
+}
+#squo5 p {
+    font-size: 90%;
+}
+#squo5 table {
+    margin-left: 21em;
+}
+#squo5 td {
+    text-align: left;
+}
+#squo6 h1 {
+    font-size: 320%;
+    text-align: center;
+}
+#squo6 p {
+    font-size: 320%;
+    text-align: center;
+}
+#squo6 h1 {
+    margin-bottom: 1.2em;
+}
+#squo6 p {
+  margin-top: 0.0em;
+}
+#squo6 img {
+  margin-top: 0.6em;
+}
+
+/* questions slide */
+#last {
+    font-size: 170%;
+}
