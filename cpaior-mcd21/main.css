@@ -111,6 +111,11 @@ pre {
     margin-bottom: 0.3em;
     margin-top: 0.3em;
 }
+#title p {
+    font-size: 90%;
+    text-align: right;
+    margin-top: 3.5em;
+}
 
 #motivation p {
     font-size: 400%;
