@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400i,700);
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+/* @import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700); */
+
+/* two main colors: alert and focus */
+.alert {
+    color: #7c011e;
+}
+
+.focus {
+    color: #65ab2f;
+    /* color: #51882f; */
+}
+
+.invisible {
+    color: #ffffff;
+    text-shadow: -1px -1px 1px rgba(100, 100, 100, 0.0);
+}
+
+.boldit {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mainpoint {
+    font-size: 200%;
+}
+
+.small {
+    font-size: 70%;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 70%;
+  color: #d3d7cf;
+}
+
+.smallandgap {
+    font-size: 70%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* body style */
+body {
+    font-size: 200%;
+    text-align: center;
+    font-family: PT Serif;
+    text-shadow: -1px -1px 1px rgba(100, 100, 100, 0.3);
+}
+
+/* width of all slides redefined */
+.step {
+    width: 1400px;
+}
+
+/* common style options */
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    font-size: 125%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+pre {
+    font-family: 'Fira Code';
+}
+
+/* individual style configuration */
+/* title configuration */
+#title h1 {
+    font-size: 200%;
+    margin-top: 1.0em;
+}
+#title h2 {
+    font-size: 250%;
+    margin-bottom: 2.0em;
+}
+#title h3 {
+    font-size: 125%;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+#title h4 {
+    font-size: 85%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+#motivation p {
+    font-size: 400%;
+}
+
+#parrot p {
+    font-size: 80%;
+    text-align: right;
+    color: #d3d7cf;
+}
+
+/* sessions configuration */
+#sessions h1 {
+    font-size: 400%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+#sessions p {
+    font-size: 250%;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+/* lunch */
+#lunch h1 {
+    font-size: 400%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+#lunch p {
+    font-size: 250%;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+/* wifi */
+#wifi h1 {
+    font-size: 400%;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+#wifi h2 {
+    font-size: 250%;
+    margin-bottom: 0.0em;
+    margin-top: 0.0em;
+}
+#wifi p {
+    font-size: 150%;
+    margin-bottom: 0.2em;
+    margin-top: 1.5em;
+}
+
+/* schedule */
+#schedule h1 {
+    font-size: 220%;
+    margin-bottom: 1.5em;
+    margin-top: 0.3em;
+}
+#schedule p {
+    font-size: 78%;
+    margin-bottom: 0.2em;
+}
+#schedule em {
+    color: #a40000;
+}
