@@ -1,0 +1,1102 @@
+@inproceedings{scpoui-cp21,
+  author    = {A. Semenov and D. Chivilikhin and A. Pavlenko and
+               I. Otpuschennikov and V. Ulyantsev and A. Ignatiev},
+  title     = {Evaluating the Hardness of SAT Instances Using Evolutionary Optimization Algorithms},
+  booktitle = {27th International Conference on Principles and Practice of
+               Constraint Programming (CP 2021)},
+  year      = {2021},
+  abstract  = {Propositional satisfiability (SAT) solvers are deemed to be among the most efficient reasoners, which have been successfully used in a wide range of practical applications. As this contrasts the well-known NP-completeness of SAT, a number of attempts have been made in the recent past to assess the hardness of propositional formulas in conjunctive normal form (CNF). The present paper proposes a CNF formula hardness measure which is close in conceptual meaning to the one based on Backdoor set notion: in both cases some subset B of variables in a CNF formula is used to define the hardness of the formula w.r.t. this set. In contrast to the backdoor measure, the new measure does not demand the polynomial decidability of CNF formulas obtained when substituting assignments of variables from B to the original formula. To estimate this measure the paper suggests an adaptive (ε, \delta)-approximation probabilistic algorithm. The problem of looking for the subset of variables which provides the minimal hardness value is reduced to optimization of a pseudo-Boolean black-box function. We apply evolutionary algorithms to this problem and demonstrate applicability of proposed notions and techniques to tests from several families of unsatisfiable CNF formulas.},
+}
+
+@article{bbimms-aij21,
+  author    = {Maria Luisa Bonet and
+               Sam Buss and
+               Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques-Silva},
+  title     = {Propositional Proof Systems Based on Maximum Satisfiability},
+  journal   = {Artificial Intelligence},
+  year      = {2021},
+  volume    = {300},
+  pages     = {xxx--xxx},
+  url       = {https://doi.org/10.1016/j.artint.2021.103552},
+  html      = {https://doi.org/10.1016/j.artint.2021.103552},
+  abstract  = {The paper describes the use of dual-rail MaxSAT systems to solve Boolean satisfiability (SAT), namely to determine if a set of clauses is satisfiable. The Horn MaxSAT problem is the problem of satisfying the maximum number of clauses in an instance of SAT. The dual-rail encoding adds extra variables for the complements of variables, and allows encoding an instance of SAT as a Horn MaxSAT problem. We discuss three implementations of dual-rail MaxSAT: core-guided systems, minimal hitting set (MaxHS) systems, and Horn MaxSAT resolution inference systems. All three of these can be more efficient than resolution and thus than conflict-driven clause learning (CDCL). All three systems can give polynomial size refutations for the pigeonhole principle, the doubled pigeonhole principle and the mutilated chessboard principles. The dual-rail MaxHS MaxSat system can give polynomial size proofs of the parity principle. However, dual-rail MaxSAT resolution requires exponential size proofs for the parity principle; this is proved by showing that constant depth Frege augmented with the pigeonhole principle can polynomially simulate dual-rail MaxSAT resolution. Consequently, dual-rail MaxSAT resolution does not simulate cutting planes. We further show that core-guided dual-rail MaxSAT and weighted dual-rail MaxSAT resolution polynomially simulate resolution. Finally, we report the results of experiments with core-guided dual-rail MaxSAT and MaxHS dual-rail MaxSAT showing strong performance by these systems.},
+}
+
+@inproceedings{hiims-kr21,
+  author    = {Xuanxiang Huang and
+               Yacine Izza and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {On Efficiently Explaining Graph-Based Classifiers},
+  booktitle = {18th Conference on Principles of Knowledge Representation and Reasoning (KR 2021)},
+  year      = {2021},
+  abstract  = {Recent work has shown that not only decision trees (DTs) may not be interpretable but also proposed a polynomial-time algorithm for computing one PI-explanation of a DT. This paper shows that for a large class of classifiers, globally referred to as decision graphs, and which include decision trees and binary decision diagrams, but also their multi-valued variants, there exist polynomial time algorithms for computing one PI-explanation. In addition, the paper also proposes a polynomial time algorithm for computing one contrastive explanation. These novel algorithms build on explanation graphs (XpG's). XpG's denote a graph representation that enables both theoretical and practically efficient computation of explanations for decision graphs. Furthermore, the paper proposes a practically efficient solution for the enumeration of explanations, and studies the complexity ofdeciding whether a given feature is included in some explanation. For the concrete case of decision trees, the paper shows that contrastive explanations can be enumerated in polynomial total time. Finally, the experimental results validate the practical applicability of the algorithms proposed in the paper on a wide range of publicly available benchmarks.},
+  arxiv     = {2106.01350},
+}
+
+@inproceedings{msgcin-icml21,
+  author    = {J. Marques{-}Silva and
+               T. Gerspacher and
+               M. C. Cooper and
+               A. Ignatiev and
+               N. Narodytska},
+  title     = {Explanations for Monotonic Classifiers},
+  booktitle = {38th International Conference on Machine Learning (ICML 2021)},
+  year      = {2021},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {7469--7479},
+  publisher = {{PMLR}},
+  year      = {2021},
+  url       = {http://proceedings.mlr.press/v139/marques-silva21a.html},
+  html      = {http://proceedings.mlr.press/v139/marques-silva21a.html},
+  pdf       = {msgcin-icml21-preprint.pdf},
+  abstract  = {In many classification tasks there is a requirement of monotonicity. Concretely, if all else remains constant, increasing (resp. decreasing) the value of one or more features must not decrease (resp. increase) the value of the prediction. Despite comprehensive efforts on learning monotonic classifiers, dedicated approaches for explaining monotonic classifiers are scarce and classifier-specific. This paper describes novel algorithms for the computation of one formal explanation of a (black-box) monotonic classiﬁer. These novel algorithms are polynomial (indeed linear) in the run time complexity of the classifier. Furthermore, the paper presents a practically efficient model-agnostic algorithm for enumerating formal explanations.},
+  arxiv     = {2106.00154},
+}
+
+@article{yislb-jair21,
+  author    = {Jinqiang Yu and
+               Alexey Ignatiev and
+               Peter J. Stuckey and
+               Pierre Le Bodic},
+  title     = {Learning Optimal Decision Sets and Lists with SAT},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2021},
+  volume    = {xx},
+  pages     = {xxx--xxx},
+  abstract  = {Decision sets and decision lists are two examples of the most easily explainable machine learning models. Given the renewed emphasis on explainable machine learning decisions, both of these machine learning models are increasingly attractive, combining small size and clear explainability. Here, we define size as the total number of literals in these rule-based models as opposed to earlier work that concentrates on the number of rules. In this paper, we develop approaches to computing minimum-size "perfect" decision sets and decision lists, which are perfectly accurate on the training data, and minimal in size, making use of modern SAT solving technology. We also provide a new method for determining optimal sparse alternatives, which trade off size and accuracy. The experiments in this paper demonstrate that the optimal decision sets computed by the SAT-based approach are comparable with the best heuristic methods, but much more succinct, and thus, more explainable. We contrast the size and test accuracy of optimal decisions lists versus optimal decision sets, as well as other state-of-the-art methods for determining optimal decision lists. Finally, we examine the size of average explanations generated by decision sets and decision lists.},
+}
+
+@inproceedings{ims-sat21a,
+  author    = {Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {SAT-Based Rigorous Explanations for Decision Lists},
+  booktitle = {24th International Conference on Theory and Applications of Satisfiability Testing (SAT 2021)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12831},
+  pages     = {251--269},
+  publisher = {Springer},
+  year      = {2021},
+  url       = {https://doi.org/10.1007/978-3-030-80223-3\_18},
+  html      = {https://doi.org/10.1007/978-3-030-80223-3\_18},
+  abstract  = {Decision lists (DLs) find a wide range of uses for classification problems in Machine Learning (ML), being implemented in a number of ML frameworks. DLs are often perceived as interpretable. However, building on recent results for decision trees (DTs), we argue that interpretability is an elusive goal for some DLs. As a result, for some uses of DLs, it will be important to compute (rigorous) explanations. Unfortunately, and in clear contrast with the case of DTs, this paper shows that computing explanations for DLs is computationally hard. Motivated by this result, the paper proposes propositional encodings for computing abductive explanations (AXps) and contrastive explanations (CXps) of DLs. Furthermore, the paper investigates the practical efficiency of a MARCO-like approach for enumerating explanations. The experimental results demonstrate that, for DLs used in practical settings, the use of SAT oracles offers a very efficient solution, and that complete enumeration of explanations is most often feasible.},
+  pdf       = {ims-sat21-preprint.pdf},
+  arxiv     = {2105.06782},
+  slides    = {ims-sat21-slides.pdf},
+  poster    = {ims-sat21-poster.pdf},
+  code      = {https://github.com/alexeyignatiev/xdl-tool}
+}
+
+@inproceedings{kims-sat21b,
+  author    = {Stepan Kochemazov and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {Assessing Progress in SAT Solvers Through the Lens of Incremental SAT},
+  booktitle = {24th International Conference on Theory and Applications of Satisfiability Testing (SAT 2021)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12831},
+  pages     = {280--298},
+  publisher = {Springer},
+  year      = {2021},
+  url       = {https://doi.org/10.1007/978-3-030-80223-3\_20},
+  html      = {https://doi.org/10.1007/978-3-030-80223-3\_20},
+  abstract  = {There is a wide consensus, which is supported by the hard experimental evidence of the SAT competitions, that clear progress in SAT solver performance has been observed in recent years. However, in the vast majority of practical applications of SAT, one is expected to use SAT solvers as oracles deciding a possibly large number of propositional formulas. In practice, this is often achieved through the use of incremental SAT. Given this fundamental use of SAT solvers, this paper investigates whether recent improvements in solver performance have an observable positive impact on the overall problem-solving efficiency in settings where incremental SAT is mandatory or at least expected. Our results, obtained on a number of well-known practically significant applications, suggest that most improvements made to SAT solvers in recent years have no positive impact on the overall performance when solvers are used incrementally.},
+  pdf       = {kims-sat21-preprint.pdf},
+  code      = {https://github.com/veinamond/rlnt}
+}
+
+@inproceedings{imsns-ijcai21,
+  author    = {Alexey Ignatiev and
+               Joao Marques-Silva and
+               Nina Narodytska and
+               Peter J. Stuckey},
+  title     = {Reasoning-Based Learning of Interpretable ML Models},
+  booktitle = {30th International Joint Conference on Artificial Intelligence (IJCAI 2021)},
+  year      = {2021},
+  abstract  = {Artificial Intelligence (AI) is widely used in decision making procedures in myriads of real-world applications across important practical areas such as finance, healthcare, education, and safety critical systems. Due to its ubiquitous use in safety and privacy critical domains, it is often vital to understand the reasoning behind the AI decisions, which motivates the need for explainable AI (XAI). One of the major approaches to XAI is represented by computing so-called interpretable machine learning (ML) models, such as decision trees (DT), decision lists (DL) and decision sets (DS). These models build on the use of if-then rules and are thus deemed to be easily understandable by humans. A number of approaches have been proposed in the recent past to devising all kinds of interpretable ML models, the most prominent of which involve encoding the problem into a logic formalism, which is then tackled by invoking a reasoning or discrete optimization procedure. This paper overviews the recent advances of the reasoning and constraints based approaches to learning interpretable ML models and discusses their advantages and limitations.},
+  pdf       = {imsns-ijcai21-preprint.pdf},
+  slides    = {imsns-ijcai21-slides.pdf},
+  poster    = {imsns-ijcai21-poster.pdf},
+}
+
+@inproceedings{ccimspp-date21,
+  author    = {G. Cabodi and
+               P. E. Camurati and
+               A. Ignatiev and
+               J. Marques-Silva and
+               M. Palena and
+               P. Pasini},
+  title     = {Optimizing Binary Decision Diagrams for Interpretable Machine Learning Classification},
+  booktitle = {Design, Automation and Test in Europe Conference (DATE 2021)},
+  year      = {2021},
+  pages     = {1122--1125},
+  publisher = {{IEEE}},
+  url       = {https://doi.org/10.23919/DATE51398.2021.9474083},
+  html      = {https://doi.org/10.23919/DATE51398.2021.9474083},
+  abstract  = {Motivated by the need to understand the behaviour of complex machine learning (ML) models, there has been recent interest in learning optimal (or sub-optimal) decision trees (DTs). This interest is explained by the fact that DTs are widely regarded as interpretable by human decision makers. An alternative to DTs are Binary Decision Diagrams (BDDs), which can be deemed interpretable. Compared to DTs, and despite a fixed variable order, BDDs offer the advantage of more compact representations in practice, due to node sharing. Moreover, there is also extensive experience in the efficient manipulation of BDDs. Our work proposes preliminary inroads in two main directions: (a) proposing a SAT-based model for computing a decision tree as the smallest Reduced Ordered Binary Decision Diagram, consistent with given training data; and (b) exploring heuristic approaches for deriving sub-optimal (i.e., not minimal) ROBDDs, in order to improve the scalability of the proposed technique. The heuristic approach is related to recent work on using BDDs for classification. Whereas previous works addressed size reduction by general logic synthesis techniques, our work adds the contribution of generalized cofactors, that are a well-known compaction technique specific to BDDs, once a care (or equivalently a don't care) set is given. Preliminary experimental results are also provided, proposing a direct comparison between optimal and sub-optimal solutions, as well as an evaluation of the impact of the proposed size reduction steps.},
+  pdf       = {ccimspp-date21-preprint.pdf},
+}
+
+@inproceedings{ilsms-aaai21,
+  author    = {Alexey Ignatiev and
+               Edward Lam and
+               Peter J. Stuckey and
+               Joao Marques-Silva},
+  title     = {A Scalable Two Stage Approach to Computing Optimal Decision Sets},
+  booktitle = {34th AAAI Conference on Artificial Intelligence (AAAI 2021)},
+  pages     = {3806--3814},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+  url       = {https://ojs.aaai.org/index.php/AAAI/article/view/16498},
+  html      = {https://ojs.aaai.org/index.php/AAAI/article/view/16498},
+  abstract  = {Machine learning (ML) is ubiquitous in modern life. Since it is being deployed in technologies that affect our privacy and safety, it is often crucial to understand the reasoning behind its decisions, warranting the need for explainable AI. Rule-based models, such as decision trees, decision lists, and decision sets, are conventionally deemed to be the most interpretable. Recent work uses propositional satisfiability (SAT) solving (and its optimization variants) to generate minimum-size decision sets. Motivated by limited practical scalability of these earlier methods, this paper proposes a novel approach to learn minimum-size decision sets by enumerating individual rules of the target decision set independently of each other, and then solving a set cover problem to select a subset of rules. The approach makes use of modern maximum satisfiability and integer linear programming technologies. Experiments on a wide range of publicly available datasets demonstrate the advantage of the new approach over the state of the art in SAT-based decision set learning.},
+  arxiv     = {2102.01904},
+  pdf       = {ilsms-aaai21-preprint.pdf},
+  slides    = {ilsms-aaai21-slides.pdf},
+  poster    = {ilsms-aaai21-poster.pdf},
+  code      = {https://github.com/alexeyignatiev/minds},
+}
+
+@inproceedings{inams-aiia20,
+  author    = {Alexey Ignatiev and
+               Nina Narodytska and
+               Nicholas Asher and
+               Joao Marques{-}Silva},
+  title     = {From Contrastive to Abductive Explanations and Back Again},
+  booktitle = {XIXth International Conference of the Italian Association for Artificial Intelligence (AI*IA 2020)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12414},
+  pages     = {335--355},
+  abstract  = {Explanations of Machine Learning (ML) models often address a ‘Why?' question. Such explanations can be related with selecting feature-value pairs which are sufficient for the prediction. Recent work has investigated explanations that address a ‘Why Not?' question, i.e. finding a change of feature values that guarantee a change of prediction. Given their goals, these two forms of explaining predictions of ML models appear to be mostly unrelated. However, this paper demonstrates otherwise, and establishes a rigorous formal relationship between ‘Why?' and ‘Why Not?' explanations. Concretely, the paper proves that, for any given instance, ‘Why?' explanations are minimal hitting sets of ‘Why Not?' explanations and vice-versa. Furthermore, the paper devises novel algorithms for extracting and enumerating both forms of explanations.},
+  year      = {2020},
+  url       = {https://doi.org/10.1007/978-3-030-77091-4_21},
+  html      = {https://doi.org/10.1007/978-3-030-77091-4_21},
+  arxiv     = {2012.11067},
+  pdf       = {inams-aiia20-preprint.pdf}
+}
+
+@inproceedings{msgcin-nips20,
+  author    = {J. Marques{-}Silva and
+               T. Gerspacher and
+               M. C. Cooper and
+               A. Ignatiev and
+               N. Narodytska},
+  title     = {Explaining Naive Bayes and Other Linear Classifiers with Polynomial Time and Delay},
+  booktitle = {34th Conference on Neural Information Processing Systems (NeurIPS 2020)},
+  year      = {2020},
+  abstract  = {Recent work proposed the computation of so-called PI-explanations of Naive Bayes Classifiers (NBCs). PI-explanations are subset-minimal sets of feature-value pairs that are sufficient for the prediction, and have been computed with state-of-the-art exact algorithms that are worst-case exponential in time and space. In contrast, we show that the computation of one PI-explanation for an NBC can be achieved in log-linear time, and that the same result also applies to the more general class of linear classifiers. Furthermore, we show that the enumeration of PI-explanations can be obtained with polynomial delay. Experimental results demonstrate the performance gains of the new algorithms when compared with earlier work. The experimental results also investigate ways to measure the quality of heuristic explanations.},
+  arxiv     = {2008.05803},
+  url       = {https://proceedings.neurips.cc/paper/2020/hash/eccd2a86bae4728b38627162ba297828-Abstract.html},
+  html      = {https://proceedings.neurips.cc/paper/2020/hash/eccd2a86bae4728b38627162ba297828-Abstract.html},
+  code      = {https://github.com/jpmarquessilva/expxlc},
+  pdf       = {msgcin-nips20-preprint.pdf}
+}
+
+@article{yilbs-corr20,
+  author    = {Jinqiang Yu and
+               Alexey Ignatiev and
+               Pierre Le Bodic and
+               Peter J. Stuckey},
+  title     = {Optimal Decision Lists using {SAT}},
+  journal   = {CoRR},
+  volume    = {abs/2010.09919},
+  year      = {2020},
+  abstract  = {Decision lists are one of the most easily explainable machine learning models. Given the renewed emphasis on explainable machine learning decisions, this machine learning model is increasingly attractive, combining small size and clear explainability. In this paper, we show for the first time how to construct optimal "perfect" decision lists which are perfectly accurate on the training data, and minimal in size, making use of modern SAT solving technology. We also give a new method for determining optimal sparse decision lists, which trade off size and accuracy. We contrast the size and test accuracy of optimal decisions lists versus optimal decision sets, as well as other state-of-the-art methods for determining optimal decision lists. We also examine the size of average explanations generated by decision sets and decision lists.},
+  url       = {http://arxiv.org/abs/2010.09919},
+  html      = {http://arxiv.org/abs/2010.09919},
+  archivePrefix = {arXiv},
+  eprint    = {2010.09919}
+}
+
+@article{iims-corr20,
+  author    = {Yacine Izza and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {On Explaining Decision Trees},
+  journal   = {CoRR},
+  volume    = {abs/2010.11034},
+  year      = {2020},
+  abstract  = {Decision trees (DTs) epitomize what have become to be known as interpretable machine learning (ML) models. This is informally motivated by paths in DTs being often much smaller than the total number of features. This paper shows that in some settings DTs can hardly be deemed interpretable, with paths in a DT being arbitrarily larger than a PI-explanation, i.e. a subset-minimal set of feature values that entails the prediction. As a result, the paper proposes a novel model for computing PI-explanations of DTs, which enables computing one PI-explanation in polynomial time. Moreover, it is shown that enumeration of PI-explanations can be reduced to the enumeration of minimal hitting sets. Experimental results were obtained on a wide range of publicly available datasets with well-known DT-learning tools, and confirm that in most cases DTs have paths that are proper supersets of PI-explanations.},
+  url       = {http://arxiv.org/abs/2010.11034},
+  html      = {http://arxiv.org/abs/2010.11034},
+  archivePrefix = {arXiv},
+  eprint    = {2010.11034}
+}
+
+@inproceedings{icshms-cp20,
+  author    = {A. Ignatiev and
+               M. C. Cooper and
+               M. Siala and
+               E. Hebrard and
+               J. Marques{-}Silva},
+  title     = {Towards Formal Fairness in Machine Learning},
+  booktitle = {26th International Conference on Principles and Practice of Constraint Programming (CP 2020)},
+  year      = {2020},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12333},
+  pages     = {846--867},
+  abstract  = {One of the challenges of deploying machine learning (ML) systems is fairness. Datasets often include sensitive features, which ML algorithms may unwittingly use to create models that exhibit unfairness. Past work on fairness offers no formal guarantees in their results. This paper proposes to exploit formal reasoning methods to tackle fairness. Starting from an intuitive criterion for fairness of an ML model, the paper formalises it, and shows how fairness can be represented as a decision problem, given some logic representation of an ML model. The same criterion can also be applied to assessing bias in training data. Moreover, we propose a reasonable set of axiomatic properties which no other definition of dataset bias can satisfy. The paper also investigates the relationship between fairness and explainability, and shows that approaches for computing explanations can serve to assess fairness of particular predictions. Finally, the paper proposes SAT-based approaches for learning fair ML models, even when the training data exhibits bias, and reports experimental trials.},
+  url       = {https://doi.org/10.1007/978-3-030-58475-7_49},
+  html      = {https://doi.org/10.1007/978-3-030-58475-7_49},
+  arxiv     = {2010.09919},
+  pdf       = {icshms-cp20-preprint.pdf}
+}
+
+@inproceedings{yisb-cp20,
+  author    = {Jinqiang Yu and
+               Alexey Ignatiev and
+               Peter J. Stuckey and
+               Pierre Le Bodic},
+  title     = {Computing Optimal Decision Sets with SAT},
+  booktitle = {26th International Conference on Principles and Practice of Constraint Programming (CP 2020)},
+  year      = {2020},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12333},
+  pages     = {952--970},
+  abstract  = {As machine learning is increasingly used to help make decisions, there is a demand for these decisions to be explainable. Arguably, the most explainable machine learning models use decision rules. This paper focuses on decision sets, a type of model with unordered rules, which explains each prediction with a single rule. In order to be easy for humans to understand, these rules must be concise. Earlier work on generating optimal decision sets first minimizes the number of rules, and then minimizes the number of literals, but the resulting rules can often be very large. Here we consider a better measure, namely the total size of the decision set in terms of literals. So we are not driven to a small set of rules which require a large number of literals. We provide the first approach to determine minimum-size decision sets that achieve minimum empirical risk and then investigate sparse alternatives where we trade accuracy for size. By finding optimal solutions we show we can build decision set classifiers that are almost as accurate as the best heuristic methods, but far more concise, and hence more explainable.},
+  url       = {https://doi.org/10.1007/978-3-030-58475-7_55},
+  html      = {https://doi.org/10.1007/978-3-030-58475-7_55},
+  arxiv     = {2007.15140},
+  pdf       = {yisb-cp20-preprint.pdf}
+}
+
+@inproceedings{ignatiev-ijcai20,
+  author    = {Alexey Ignatiev},
+  title     = {Towards Trustable Explainable AI},
+  booktitle = {29th International Joint Conference on Artificial Intelligence (IJCAI 2020)},
+  year      = {2020},
+  pages     = {5154--5158},
+  publisher = {ijcai.org},
+  abstract  = {Explainable artificial intelligence (XAI) represents arguably one of the most crucial challenges being faced by the area of AI these days. Although the majority of approaches to XAI are of heuristic nature, recent work proposed the use of abductive reasoning to computing provably correct explanations for machine learning (ML) predictions. The proposed rigorous approach was shown to be useful not only for computing trustable explanations but also for validating explanations computed heuristically. It was also applied to uncover a close relationship between XAI and verification of ML models. This paper overviews the advances of the rigorous logic-based approach to XAI and argues that it is indispensable if trustable XAI is of concern.},
+  url       = {https://doi.org/10.24963/ijcai.2020/726},
+  html      = {https://doi.org/10.24963/ijcai.2020/726},
+  pdf       = {ignatiev-ijcai20-preprint.pdf},
+  poster    = {ignatiev-ijcai20-poster.pdf},
+  htmslides = {ijcai20-slides/}
+}
+
+@inproceedings{zims-ecai20,
+  author    = {Oleg Zaikin and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {Branch Location Problems with Maximum Satisfiability},
+  booktitle = {24th European Conference on Artificial Intelligence (ECAI 2020)},
+  year      = {2020},
+  pages     = {379--386},
+  abstract  = {Constrained location problems find a wide range of practical applications. Recent work showed that dedicated brute-force algorithms and greedy approach enable solutions of reasonable efficiency, for a restriction of the general constrained location problem, referred to as the branch location problem. This paper extends earlier work in several ways. First, the paper develops propositional encodings for the branch location problem. Second, given that the branch location problem is a restriction of the general constraint location problem, the paper shows that the restricted problem is still hard for NP. Third, the paper devises improved propositional encodings for the branch location problem, which in practice enable not only solving exactly a significantly larger class of problems but also effectively approximating optimal problem solutions, using state-of-the-art (complete and incomplete) Maximum Satisfiability (MaxSAT) solvers.},
+  pdf       = {zims-ecai20-preprint.pdf},
+  html      = {http://ecai2020.eu/papers/1599_paper.pdf}
+}
+
+@inproceedings{inms-nips19,
+  author    = {Alexey Ignatiev and
+               Nina Narodytska and
+               Joao Marques{-}Silva},
+  title     = {On Relating Explanations and Adversarial Examples},
+  booktitle = {33rd Conference on Neural Information Processing
+               Systems (NeurIPS 2019)},
+  year      = {2019},
+  pages     = {15857--15867},
+  abstract  = {The importance of explanations (XP's) of machine learning (ML) model predictions and of adversarial examples (AE's) cannot be overstated, with both arguably being essential for the practical success of ML in different settings. There has been recent work on understanding and assessing the relationship between XP's and AE's. However, such work has been mostly experimental and a sound theoretical relationship has been elusive. This paper demonstrates that explanations and adversarial examples are related by a generalized form of hitting set duality, which extends earlier work on hitting set duality observed in model-based diagnosis and knowledge compilation. Furthermore, the paper proposes algorithms, which enable computing adversarial examples from explanations and vice-versa.},
+  url       = {http://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples},
+  html      = {http://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples},
+  pdf       = {inms-nips19-preprint.pdf},
+  code      = {https://github.com/alexeyignatiev/xpce-duality},
+  poster    = {inms-nips19-poster.pdf}
+}
+
+@inproceedings{inms-aaai19,
+  author    = {Alexey Ignatiev and
+               Nina Narodytska and
+               Joao Marques{-}Silva},
+  title     = {Abduction-Based Explanations for Machine Learning Models},
+  booktitle = {33rd AAAI Conference on Artificial Intelligence (AAAI 2019)},
+  pages     = {1511--1519},
+  publisher = {{AAAI} Press},
+  year      = {2019},
+  abstract  = {The growing range of applications of Machine Learning (ML) in a multitude of settings motivates the ability of computing small explanations for predictions made. Small explanations are generally accepted as easier for human decision makers to understand. Most earlier work on computing explanations is based on heuristic approaches, providing no guarantees of quality, in terms of how close such solutions are from cardinality- or subset-minimal explanations. This paper develops a constraint-agnostic solution for computing explanations for any ML model. The proposed solution exploits abductive reasoning, and imposes the requirement that the ML model can be represented as sets of constraints using some target constraint reasoning system for which the decision problem can be answered with some oracle. The experimental results, obtained on well-known datasets, validate the scalability of the proposed approach as well as the quality of the computed solutions.},
+  url       = {https://aaai.org/ojs/index.php/AAAI/article/view/3964},
+  html      = {https://aaai.org/ojs/index.php/AAAI/article/view/3964},
+  pdf       = {inms-aaai19-preprint.pdf},
+  slides    = {inms-aaai19-talk.pdf},
+  arxiv     = {1811.10656}
+}
+
+@inproceedings{imwms-ijcai19,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Georg Weissenbacher and
+               Joao Marques{-}Silva},
+  editor    = {Sarit Kraus},
+  title     = {Model-Based Diagnosis with Multiple Observations},
+  booktitle = {28th International Joint Conference on Artificial Intelligence (IJCAI 2019)},
+  pages     = {1108--1115},
+  publisher = {ijcai.org},
+  year      = {2019},
+  abstract  = {Existing automated testing frameworks require multiple observations to be jointly diagnosed with the purpose of identifying common fault locations. This is the case for example with continuous integration tools. This paper shows that existing solutions fail to compute the set of minimal diagnoses, and as a result run times can increase by orders of magnitude. The paper proposes not only solutions to correct existing algorithms, but also conditions for improving their run times. Nevertheless, the diagnosis of multiple observations raises a number of important computational challenges, which even the corrected algorithms are often unable to cope with. As a result, the paper devises a novel algorithm for diagnosing multiple observations, which is shown to enable significant performance improvements in practice.},
+  url       = {https://doi.org/10.24963/ijcai.2019/155},
+  html      = {https://doi.org/10.24963/ijcai.2019/155},
+  pdf       = {imwms-ijcai19-preprint.pdf},
+  slides    = {imwms-ijcai19-slides.pdf},
+  doi       = {10.24963/ijcai.2019/155},
+  code      = {https://github.com/alexeyignatiev/mbd-mobs},
+}
+
+@inproceedings{zmiums-lata19,
+  author    = {I. Zakirzyanov and
+               A. Morgado and
+               A. Ignatiev and
+               V. Ulyantsev and
+               J. Marques{-}Silva},
+  editor    = {Carlos Martin{-}Vide and
+               Alexander Okhotin and
+               Dana Shapira},
+  title     = {Efficient Symmetry Breaking for SAT-Based Minimum {DFA} Inference},
+  booktitle = {21st International Conference on Theory and Applications of Satisfiability Testing (LATA 2019)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11417},
+  pages     = {159--173},
+  publisher = {Springer},
+  year      = {2019},
+  abstract  = {Inference of deterministic finite automata (DFA) finds a wide range of important practical applications. In recent years, the use of SAT and SMT solvers for the minimum size DFA inference problem (MinDFA) enabled significant performance improvements. Nevertheless, there are many problems that are simply too difficult to solve to optimality with existing technologies. One fundamental difficulty of the MinDFA problem is the size of the search space. Moreover, another fundamental drawback of these approaches is the encoding size. This paper develops novel compact encodings for Symmetry Breaking of SAT-based approaches to MinDFA. The proposed encodings are shown to perform comparably in practice with the most efficient, but also significantly larger, symmetry breaking encodings.},
+  url       = {https://doi.org/10.1007/978-3-030-13435-8\_12},
+  html      = {https://doi.org/10.1007/978-3-030-13435-8\_12},
+  pdf       = {zmiums-lata19-preprint.pdf},
+  doi       = {10.1007/978-3-030-13435-8\_12}
+}
+
+@inproceedings{mkims-sat19a,
+  author    = {Carlos Mencia and
+               Oliver Kullmann and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  editor    = {Mikolas Janota and
+               In{\^{e}}s Lynce},
+  title     = {On Computing the Union of MUSes},
+  booktitle = {22nd International Conference on Theory and Applications of Satisfiability Testing (SAT 2019)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11628},
+  pages     = {211--221},
+  publisher = {Springer},
+  year      = {2019},
+  abstract  = {This paper considers unsatisfiable CNF formulas and addresses the problem of computing the union of the clauses included in some minimally unsatisfiable subformula (MUS). The union of MUSes represents a useful notion in infeasibility analysis since it summarizes all the causes for the unsatisfiability of a given formula. The paper proposes a novel algorithm for this problem, developing a refined recursive enumeration of MUSes based on powerful pruning techniques. Experimental results indicate the practical suitability of the approach.},
+  url       = {https://doi.org/10.1007/978-3-030-24258-9\_15},
+  html      = {https://doi.org/10.1007/978-3-030-24258-9\_15},
+  pdf       = {mkims-sat19-preprint.pdf},
+  doi       = {10.1007/978-3-030-24258-9\_15}
+}
+
+@inproceedings{mibmsb-sat19b,
+  author    = {Antonio Morgado and
+               Alexey Ignatiev and
+               Maria Luisa Bonet and
+               Joao Marques{-}Silva and
+               Sam Buss},
+  editor    = {Mikolas Janota and
+               In{\^{e}}s Lynce},
+  title     = {DRMaxSAT with MaxHS: First Contact},
+  booktitle = {22nd International Conference on Theory and Applications of Satisfiability Testing (SAT 2019)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11628},
+  pages     = {239--249},
+  publisher = {Springer},
+  year      = {2019},
+  abstract  = {The proof system of Dual-Rail MaxSAT (DRMaxSAT) was recently shown to be capable of efficiently refuting families of formulas that are well-known to be hard for resolution, concretely when the MaxSAT solving approach is either MaxSAT resolution or core-guided algorithms. Moreover, DRMaxSAT based on MaxSAT resolution was shown to be stronger than general resolution. Nevertheless, existing experimental evidence indicates that the use of MaxSAT algorithms based on the computation of minimum hitting sets (MHSes), i.e. MaxHS-like algorithms, are as effective, and often more effective, than core-guided algorithms and algorithms based on MaxSAT resolution. This paper investigates the use of MaxHS-like algorithms in the DRMaxSAT proof system. Concretely, the paper proves that the propositional encoding of the pigenonhole and doubled pigenonhole principles have polynomial time refutations when the DRMaxSAT proof system uses a MaxHS-like algorithm.},
+  url       = {https://doi.org/10.1007/978-3-030-24258-9\_17},
+  html      = {https://doi.org/10.1007/978-3-030-24258-9\_17},
+  pdf       = {mibmsb-sat19-preprint.pdf},
+  doi       = {10.1007/978-3-030-24258-9\_17}
+}
+
+@inproceedings{nsmims-sat19c,
+  author    = {Nina Narodytska and
+               Aditya Shrotri and
+               Kuldeep S. Meel and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  editor    = {Mikolas Janota and
+               In{\^{e}}s Lynce},
+  title     = {Assessing Heuristic Machine Learning Explanations with Model Counting},
+  booktitle = {22nd International Conference on Theory and Applications of Satisfiability Testing (SAT 2019)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11628},
+  pages     = {267--278},
+  publisher = {Springer},
+  year      = {2019},
+  abstract  = {Machine Learning (ML) models are widely used in decision making procedures in finance, medicine, education, etc. In these areas, ML outcomes can directly affect humans, e.g. by deciding whether a person should get a loan or be released from prison. Therefore, we cannot blindly rely on black box ML models and need to explain the decisions made by them. This motivated the development of a variety of ML-explainer systems, including LIME and its successor ANCHOR. Due to the heuristic nature of explanations produced by existing tools, it is necessary to validate them. We propose a SAT-based method to assess the quality of explanations produced by ANCHOR. We encode a trained ML model and an explanation for a given prediction as a propositional formula. Then, by using a state-of-the-art approximate model counter, we estimate the quality of the provided explanation as the number of solutions supporting it.},
+  url       = {https://doi.org/10.1007/978-3-030-24258-9\_19},
+  html      = {https://doi.org/10.1007/978-3-030-24258-9\_19},
+  pdf       = {nsmims-sat19-preprint.pdf},
+  doi       = {10.1007/978-3-030-24258-9\_19}
+}
+
+@article{inms-corr19,
+  author    = {Alexey Ignatiev and
+               Nina Narodytska and
+               Joao Marques{-}Silva},
+  title     = {On Validating, Repairing and Refining Heuristic {ML} Explanations},
+  journal   = {CoRR},
+  volume    = {abs/1907.02509},
+  year      = {2019},
+  abstract  = {Recent years have witnessed a fast-growing interest in computing explanations for Machine Learning (ML) models predictions. For non-interpretable ML models, the most commonly used approaches for computing explanations are heuristic in nature. In contrast, recent work proposed rigorous approaches for computing explanations, which hold for a given ML model and prediction over the entire instance space. This paper extends earlier work to the case of boosted trees and assesses the quality of explanations obtained with state-of-the-art heuristic approaches. On most of the datasets considered, and for the vast majority of instances, the explanations obtained with heuristic approaches are shown to be inadequate when the entire instance space is (implicitly) considered.},
+  url       = {http://arxiv.org/abs/1907.02509},
+  html      = {http://arxiv.org/abs/1907.02509},
+  archivePrefix = {arXiv},
+  eprint    = {1907.02509},
+  code      = {https://github.com/alexeyignatiev/xplainer}
+}
+
+@article{imms-jsat19,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  title     = {{RC2}: An Efficient {MaxSAT} Solver},
+  journal   = {{Journal on Satisfiability, Boolean Modeling and Computation}},
+  volume    = {11},
+  pages     = {53--64},
+  year      = {2019},
+  abstract  = {Recent work proposed a toolkit PySAT aiming at fast and easy prototyping with propositional satisfiability (SAT) oracles in Python, which enabled one to exploit the power of the original implementations of the state-of-the-art SAT solvers in Python. Maximum satisfiability (MaxSAT) is a well-known optimization version of SAT, which can be solved with a series of calls to a SAT oracle. Based on this fact and motivated by the ideas underlying the PySAT toolkit, this paper describes and evaluates RC2 (stands for relaxable cardinality constraints), a new core-guided MaxSAT solver written in Python, which won both unweighted and weighted categories of the main track of MaxSAT Evaluation 2018.},
+  html      = {http://jsatjournal.org/volumes/11/},
+  pdf       = {imms-jsat19-preprint.pdf},
+  code      = {https://pysathq.github.io/}
+}
+
+@inproceedings{bbimsm-aaai18a,
+  author    = {Maria Luisa Bonet and
+               Sam Buss and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva and
+               Antonio Morgado},
+  editor    = {Sheila A. McIlraith and
+               Kilian Q. Weinberger},
+  title     = {MaxSAT Resolution With the Dual Rail Encoding},
+  booktitle = {32nd AAAI Conference on Artificial Intelligence (AAAI 2018)},
+  pages     = {6565--6572},
+  publisher = {{AAAI} Press},
+  year      = {2018},
+  abstract  = {Conflict-driven clause learning (CDCL) is at the core of the success of modern SAT solvers. In terms of propositional proof complexity, CDCL has been shown as strong as general resolution. Improvements to SAT solvers can be realized either by improving existing algorithms, or by exploiting proof systems stronger than CDCL. Recent work proposed an approach for solving SAT by reduction to Horn MaxSAT. The proposed reduction coupled with MaxSAT resolution represents a new proof system, DRMaxSAT, which was shown to enable polynomial time refutations of pigeonhole formulas, in contrast with either CDCL or general resolution. This paper investigates the DRMaxSAT proof system, and shows that DRMaxSAT p-simulates general resolution, that AC0-Frege+PHP p-simulates DRMaxSAT, and that DRMaxSAT can not p-simulate AC0-Frege+PHP or the cutting planes proof system.},
+  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16782},
+  html      = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16782},
+  pdf       = {bbimsm-aaai18a-preprint.pdf},
+}
+
+@inproceedings{szoki-aaai18b,
+  author    = {A. Semenov and
+               O. Zaikin and
+               I. Otpuschennikov and
+               S. Kochemazov and
+               A. Ignatiev},
+  editor    = {Sheila A. McIlraith and
+               Kilian Q. Weinberger},
+  title     = {On Cryptographic Attacks Using Backdoors for {SAT}},
+  booktitle = {32nd AAAI Conference on Artificial Intelligence (AAAI 2018)},
+  pages     = {6641--6648},
+  publisher = {{AAAI} Press},
+  year      = {2018},
+  abstract  = {Propositional satisfiability (SAT) is at the nucleus of state-of-the-art approaches to a variety of computationally hard problems, one of which is cryptanalysis. Moreover, a number of practical applications of SAT can only be tackled efficiently by identifying and exploiting a subset of formula's variables called backdoor set (or simply backdoors). This paper proposes a new class of backdoor sets for SAT used in the context of cryptographic attacks, namely guess-and-determine attacks. The idea is to identify the best set of backdoor variables subject to a statistically estimated hardness of the guess-and-determine attack using a SAT solver. Experimental results on weakened variants of the renowned encryption algorithms exhibit advantage of the proposed approach compared to the state of the art in terms of the estimated hardness of the resulting guess-and-determine attacks.},
+  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16855},
+  html      = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16855},
+  pdf       = {szoki-aaai18b-preprint.pdf},
+  arxiv     = {1803.04646}
+}
+
+@inproceedings{ipnms-ijcar18,
+  author    = {Alexey Ignatiev and
+               Filipe Pereira and
+               Nina Narodytska and
+               Joao Marques{-}Silva},
+  editor    = {Didier Galmiche and
+               Stephan Schulz and
+               Roberto Sebastiani},
+  title     = {A SAT-Based Approach to Learn Explainable Decision Sets},
+  booktitle = {9th International Joint Conference on Automated Reasoning (IJCAR 2018)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10900},
+  pages     = {627--645},
+  publisher = {Springer},
+  year      = {2018},
+  abstract  = {The successes of machine learning in recent years have triggered a fast growing range of applications. In important settings, including safety critical applications and when transparency of decisions is paramount, accurate predictions do not suffice; one expects the machine learning model to also explain the predictions made, in forms understandable by human decision makers. Recent work proposed explainable models based on decision sets which can be viewed as unordered sets of rules, respecting some sort of rule non-overlap constraint. This paper investigates existing solutions for computing decision sets and identifies a number of drawbacks, related with rule overlap and succinctness of explanations, the accuracy of achieved results, but also the efficiency of proposed approaches. To address these drawbacks, the paper develops novel SAT-based solutions for learning decision sets. Experimental results on computing decision sets for representative datasets demonstrate that SAT enables solutions that are not only the most efficient, but also offer stronger guarantees in terms of rule non-overlap.},
+  url       = {https://doi.org/10.1007/978-3-319-94205-6\_41},
+  html      = {https://doi.org/10.1007/978-3-319-94205-6\_41},
+  pdf       = {ipnms-ijcar18-preprint.pdf},
+  doi       = {10.1007/978-3-319-94205-6\_41}
+}
+
+@inproceedings{nipms-ijcai18,
+  author    = {Nina Narodytska and
+               Alexey Ignatiev and
+               Filipe Pereira and
+               Joao Marques{-}Silva},
+  editor    = {J{\'{e}}r{\^{o}}me Lang},
+  title     = {Learning Optimal Decision Trees with {SAT}},
+  booktitle = {27th International Joint Conference on Artificial Intelligence (IJCAI 2018)},
+  pages     = {1362--1368},
+  publisher = {ijcai.org},
+  year      = {2018},
+  abstract  = {Explanations of machine learning (ML) predictions are of fundamental importance in different settings. Moreover, explanations should be succinct, to enable easy understanding by humans.  Decision trees represent an often used approach for developing explainable ML models, motivated by the natural mapping between decision tree paths and rules. Clearly, smaller trees correlate well with smaller rules, and so one  challenge is to devise solutions for computing smallest size decision trees given training data. Although simple to formulate, the computation of smallest size decision trees turns out to be an extremely challenging computational problem, for which no practical solutions are known. This paper develops a SAT-based model for computing smallest-size decision trees given training data. In sharp contrast with past work, the proposed SAT model is shown to scale for publicly available datasets of practical interest.},
+  url       = {https://doi.org/10.24963/ijcai.2018/189},
+  html      = {https://doi.org/10.24963/ijcai.2018/189},
+  pdf       = {nipms-ijcai18-preprint.pdf},
+  doi       = {10.24963/ijcai.2018/189}
+}
+
+@inproceedings{imms-sat18,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Olaf Beyersdorff and
+               Christoph M. Wintersteiger},
+  title     = {PySAT: {A} Python Toolkit for Prototyping with {SAT} Oracles},
+  booktitle = {21st International Conference on Theory and Applications of Satisfiability Testing (SAT 2018)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10929},
+  pages     = {428--437},
+  publisher = {Springer},
+  year      = {2018},
+  abstract  = {Boolean satisfiability (SAT) solvers are at the core of efficient approaches for solving a vast multitude of practical problems. Moreover, albeit targeting an NP-complete problem, SAT solvers are increasingly used for tackling problems beyond NP. Despite the success of SAT in practice, modeling with SAT and more importantly implementing SAT-based problem solving solutions is often a difficult and error-prone task. This paper proposes the PySAT toolkit, which enables fast Python-based prototyping using SAT oracles and SAT-related technology. PySAT provides a simple API for working with a few state-of-the-art SAT oracles and also integrates a number of cardinality constraint encodings, all aiming at simplifying the prototyping process. Experimental results presented in the paper show that PySAT-based implementations can be as efficient as those written in a low-level language.},
+  url       = {https://doi.org/10.1007/978-3-319-94144-8\_26},
+  html      = {https://doi.org/10.1007/978-3-319-94144-8\_26},
+  pdf       = {imms-sat18-preprint.pdf},
+  doi       = {10.1007/978-3-319-94144-8\_26},
+  code      = {https://pysathq.github.io/}
+}
+
+@inproceedings{imsmp-dl17,
+  author    = {Alexey Ignatiev and
+               Joao Marques{-}Silva and
+               Carlos Mencia and
+               Rafael Pe{\~{n}}aloza},
+  editor    = {Alessandro Artale and
+               Birte Glimm and
+               Roman Kontchakov},
+  title     = {Debugging {EL+} Ontologies through Horn {MUS} Enumeration},
+  booktitle = {30th International Workshop on Description Logics (DL 2017)},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {1879},
+  publisher = {CEUR-WS.org},
+  year      = {2017},
+  abstract  = {In description logics (DLs), axiom pinpointing refers to the problem of enumerating the minimal subsets of axioms from an ontology that entail a given consequence. Recent developments on axiom pinpointing for the light-weight DL EL+ are based on translating this problem into the enumeration of all minimally unsatisfiable subformulas (MUSes)of a propositional formula, and using advanced SAT-based techniques for solving it. Further optimizations have been obtained by targeting the MUS enumerator to the specific properties of the formula obtained. In this paper we describe different improvements that have been considered since the translation was first proposed. Through an empirical study, we analyse the behaviour of these techniques and how it depends on different characteristics of the original pinpointing problem, and the translated SAT formula.},
+  url       = {http://ceur-ws.org/Vol-1879/paper54.pdf},
+  html      = {http://ceur-ws.org/Vol-1879/paper54.pdf},
+  pdf       = {imsmp-dl17-preprint.pdf},
+}
+
+@inproceedings{msim-epia17,
+  author    = {Joao Marques{-}Silva and
+               Alexey Ignatiev and
+               Antonio Morgado},
+  editor    = {Eug{\'{e}}nio C. Oliveira and
+               Joao Gama and
+               Zita A. Vale and
+               Henrique Lopes Cardoso},
+  title     = {Horn Maximum Satisfiability: Reductions, Algorithms and Applications},
+  booktitle = {18th EPIA Conference on Artificial Intelligence (EPIA 2017)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10423},
+  pages     = {681--694},
+  publisher = {Springer},
+  year      = {2017},
+  abstract  = {Recent years have witnessed remarkable performance improvements in maximum satisfiability (MaxSAT) solvers. In practice, MaxSAT algorithms often target the most generic MaxSAT formulation, whereas dedicated solvers, which address specific subclasses of MaxSAT, have not been investigated. This paper shows that a wide range of optimization and decision problems are either naturally formulated as MaxSAT over Horn formulas, or permit simple encodings using HornMaxSAT. Furthermore, the paper also shows how linear time decision procedures for Horn formulas can be used for developing novel algorithms for the HornMaxSAT problem.},
+  url       = {https://doi.org/10.1007/978-3-319-65340-2\_56},
+  html      = {https://doi.org/10.1007/978-3-319-65340-2\_56},
+  pdf       = {msim-epia17-preprint.pdf},
+  doi       = {10.1007/978-3-319-65340-2\_56},
+  arxiv     = {1705.05335}
+}
+
+@inproceedings{pmims-eswc17,
+  author    = {Rafael Pe{\~{n}}aloza and
+               Carlos Mencia and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  editor    = {Eva Blomqvist and
+               Diana Maynard and
+               Aldo Gangemi and
+               Rinke Hoekstra and
+               Pascal Hitzler and
+               Olaf Hartig},
+  title     = {Lean Kernels in Description Logics},
+  booktitle = {14th European Semantic Web Conference (ESWC 2017)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10249},
+  pages     = {518--533},
+  year      = {2017},
+  abstract  = {Lean kernels (LKs) are an effective optimization for deriving the causes of unsatisfiability of a propositional formula.  Interestingly, no analogous notion exists for explaining consequences of description logic (DL) ontologies. We introduce LKs for DLs using a general notion of consequence-based methods, and provide an algorithm for computing them which incurs in only a linear time overhead. As an example, we instantiate our framework to the DL ALC. We prove formally and empirically that LKs provide a tighter approximation of the set of relevant axioms for a consequence than syntactic locality-based modules.},
+  url       = {https://doi.org/10.1007/978-3-319-58068-5\_32},
+  html      = {https://doi.org/10.1007/978-3-319-58068-5\_32},
+  pdf       = {pmims-eswc17-preprint.pdf},
+  doi       = {10.1007/978-3-319-58068-5\_32}
+}
+
+@inproceedings{pijms-ictai17,
+  author    = {Alessandro Previti and
+               Alexey Ignatiev and
+               Matti J{\"{a}}rvisalo and
+               Joao Marques{-}Silva},
+  title     = {On Computing Generalized Backbones},
+  booktitle = {29th International Conference on Tools with Artificial Intelligence (ICTAI 2017)},
+  pages     = {1050--1056},
+  publisher = {{IEEE} Computer Society},
+  year      = {2017},
+  abstract  = {The concept of backbone variables, i.e., variables that take the same value in all solutions-or, equivalently, never take a specific value-finds various important applications in the context of Boolean satisfiability (SAT), motivating the development of efficient algorithms for determining the set of backbone variables of a given propositional formula. Notably, this problem surpasses the complexity of merely deciding satisfiability. In this work we consider generalizations of the concept of backbones in SAT to non-binary (and potentially infinite) domain constraint satisfaction problems. Specifically, we propose a natural generalization of backbones to the context of satisfiability modulo theories (SMT), applicable to a range of different theories as well as CSPs in general, and provide two generic algorithms for determining the backbone in this general context. As two concrete instantiations, we focus on two central SMT theories, the theory of linear integer arithmetic (LIA) with infinite integer domains, and the theory of bit vectors (BV), and empirically evaluate the potential of the proposed algorithms on both LIA and BV instances.},
+  url       = {https://doi.org/10.1109/ICTAI.2017.00161},
+  html      = {https://doi.org/10.1109/ICTAI.2017.00161},
+  pdf       = {pijms-ictai17-preprint.pdf},
+  doi       = {10.1109/ICTAI.2017.00161}
+}
+
+@inproceedings{imms-ijcai17,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Carles Sierra},
+  title     = {Cardinality Encodings for Graph Optimization Problems},
+  booktitle = {26th International Joint Conference on Artificial Intelligence (IJCAI 2017)},
+  pages     = {652--658},
+  publisher = {ijcai.org},
+  year      = {2017},
+  abstract  = {Different optimization problems defined on graphs find application in complex network analysis. Existing propositional encodings render impractical the use of propositional satisfiability (SAT) and maximum satisfiability (MaxSAT) solvers for solving a variety of these problems on large graphs. This paper has two main contributions. First, the paper identifies sources of inefficiency in existing encodings for different optimization problems in graphs. Second, for the concrete case of the maximum clique problem, the paper develops a novel encoding which is shown to be far more compact than existing encodings for large sparse graphs. More importantly, the experimental results show that the proposed encoding enables existing SAT solvers to compute a maximum clique for large sparse networks, often more efficiently than the state of the art.},
+  url       = {https://doi.org/10.24963/ijcai.2017/91},
+  html      = {https://doi.org/10.24963/ijcai.2017/91},
+  pdf       = {imms-ijcai17-preprint.pdf},
+  slides    = {imms-ijcai17-talk.pdf},
+  doi       = {10.24963/ijcai.2017/91}
+}
+
+@inproceedings{imms-sat17,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Serge Gaspers and
+               Toby Walsh},
+  title     = {On Tackling the Limits of Resolution in {SAT} Solving},
+  booktitle = {20th International Conference on Theory and Applications of Satisfiability Testing (SAT 2017)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10491},
+  pages     = {164--183},
+  publisher = {Springer},
+  year      = {2017},
+  abstract  = {The practical success of Boolean Satisfiability (SAT) solvers stems from the CDCL (Conflict-Driven Clause Learning) approach to SAT solving. However, from a propositional proof complexity perspective, CDCL is no more powerful than the resolution proof system, for which many hard examples exist. This paper proposes a new problem transformation, which enables reducing the decision problem for formulas in conjunctive normal form (CNF) to the problem of solving maximum satisfiability over Horn formulas. Given the new transformation, the paper proves a polynomial bound on the number of MaxSAT resolution steps for pigeonhole formulas. This result is in clear contrast with earlier results on the length of proofs of MaxSAT resolution for pigeonhole formulas. The paper also establishes the same polynomial bound in the case of modern core-guided MaxSAT solvers. Experimental results, obtained on CNF formulas known to be hard for CDCL SAT solvers, show that these can be efficiently solved with modern MaxSAT solvers.},
+  url       = {https://doi.org/10.1007/978-3-319-66263-3\_11},
+  html      = {https://doi.org/10.1007/978-3-319-66263-3\_11},
+  pdf       = {imms-sat17-preprint.pdf},
+  slides    = {imms-sat17-talk.pdf},
+  doi       = {10.1007/978-3-319-66263-3\_11},
+  arxiv     = {1705.01477}
+}
+
+@article{impms-aicom16,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Jordi Planes and
+               Joao Marques{-}Silva},
+  title     = {Maximal falsifiability},
+  journal   = {{AI} Commun.},
+  volume    = {29},
+  number    = {2},
+  pages     = {351--370},
+  year      = {2016},
+  abstract  = {Similarly to Maximum Satisfiability (MaxSAT), Minimum Satisfiability (MinSAT) is an optimization extension of the Boolean Satisfiability (SAT) decision problem. In recent years, both problems have been studied in terms of exact and approximation algorithms. In addition, the MaxSAT problem has been characterized in terms of Maximal Satisfiable Subsets (MSSes) and Minimal Correction Subsets (MCSes), as well as Minimal Unsatisfiable Subsets (MUSes) and minimal hitting set dualization. However, and in contrast with MaxSAT, no such characterizations exist for MinSAT. This paper addresses this issue by casting the MinSAT problem in a more general framework. The paper studies Maximal Falsifiability, the problem of computing a subset-maximal set of clauses that can be simultaneously falsified, and shows that MinSAT corresponds to the complement of a largest subset-maximal set of simultaneously falsifiable clauses, i.e. the solution of the Maximum Falsifiability (MaxFalse) problem. Additional contributions of the paper include novel algorithms for Maximum and Maximal Falsifiability, as well as minimal hitting set dualization results for the MaxFalse problem. Moreover, the proposed algorithms are validated on practical instances.},
+  url       = {https://doi.org/10.3233/AIC-150685},
+  html      = {https://doi.org/10.3233/AIC-150685},
+  pdf       = {impms-aicom16-preprint.pdf},
+  doi       = {10.3233/AIC-150685}
+}
+
+@article{ijms-cj16,
+  author    = {Alexey Ignatiev and
+               Mikolas Janota and
+               Joao Marques{-}Silva},
+  title     = {Quantified maximum satisfiability},
+  journal   = {Constraints},
+  volume    = {21},
+  number    = {2},
+  pages     = {277--302},
+  year      = {2016},
+  abstract  = {In recent years, there have been significant improvements in algorithms both for Quantified Boolean Formulas (QBF) and for Maximum Satisfiability (MaxSAT). This paper studies an optimization extension of QBF and considers the problem in a quantified MaxSAT setting. More precisely, the general QMaxSAT problem is defined for QBFs with a set of soft clausal constraints and consists in finding the largest subset of the soft constraints such that the remaining QBF is true. Two approaches are investigated. One is based on relaxing the soft clauses and performing an iterative search on the cost function. The other approach, which is the main contribution of the paper, is inspired by recent work on MaxSAT, and exploits the iterative identification of unsatisfiable cores. The paper investigates the application of these approaches to the two concrete problems of computing smallest minimal unsatisfiable subformulas (SMUS) and smallest minimal equivalent subformulas (SMES), decision versions of which are well-known problems in the second level of the polynomial hierarchy. Experimental results, obtained on representative problem instances, indicate that the core-guided approach for the SMUS and SMES problems outperforms the use of iterative search over the values of the cost function. More significantly, the core-guided approach to SMUS also outperforms the state-of-the-art SMUS extractor Digger.},
+  url       = {https://doi.org/10.1007/s10601-015-9195-9},
+  html      = {https://doi.org/10.1007/s10601-015-9195-9},
+  pdf       = {ijms-cj16-preprint.pdf},
+  doi       = {10.1007/s10601-015-9195-9}
+}
+
+@inproceedings{ipms-cp16a,
+  author    = {Alexey Ignatiev and
+               Alessandro Previti and
+               Joao Marques{-}Silva},
+  editor    = {Michel Rueher},
+  title     = {On Finding Minimum Satisfying Assignments},
+  booktitle = {22nd International Conference on Principles and Practice of Constraint Programming (CP 2016)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9892},
+  pages     = {287--297},
+  publisher = {Springer},
+  year      = {2016},
+  abstract  = {Given a Satisfiability Modulo Theories (SMT) formula, a minimum satisfying assignment (MSA) is a partial assignment of minimum size that ensures the formula is satisfied. Minimum satisfying assignments find a number of practical applications that include software and hardware verification, among others. Recent work proposes the use of branch-and-bound search for computing MSAs. This paper proposes a novel counterexample-guided implicit hitting set approach for computing one MSA. Experimental results show significant performance gains over existing approaches.},
+  url       = {https://doi.org/10.1007/978-3-319-44953-1\_19},
+  html      = {https://doi.org/10.1007/978-3-319-44953-1\_19},
+  pdf       = {ipms-cp16a-preprint.pdf},
+  slides    = {ipms-cp16a-talk.pdf},
+  doi       = {10.1007/978-3-319-44953-1\_19},
+}
+
+@inproceedings{szmjin-cp16b,
+  author    = {Xujie Si and
+               Xin Zhang and
+               Vasco Manquinho and
+               Mikolas Janota and
+               Alexey Ignatiev and
+               Mayur Naik},
+  editor    = {Michel Rueher},
+  title     = {On Incremental Core-Guided MaxSAT Solving},
+  booktitle = {22nd International Conference on Principles and Practice of Constraint Programming (CP 2016)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9892},
+  pages     = {473--482},
+  publisher = {Springer},
+  year      = {2016},
+  abstract  = {This paper aims to improve the efficiency of unsat core-guided MaxSAT solving on a sequence of similar problem instances. In particular, we consider the case when the sequence is constructed by adding new hard or soft clauses. Our approach is akin to the well-known idea of incremental SAT solving. However, we show that there are important differences between incremental SAT and incremental MaxSAT, where a straightforward implementation may lead to a sharp decrease in performance. We present alternatives that enable to cope with such issues. The presented algorithm is implemented and evaluated on practical problems. It solves more instances and yields an average speedup of 1.8× on previously solvable instances.},
+  url       = {https://doi.org/10.1007/978-3-319-44953-1\_30},
+  html      = {https://doi.org/10.1007/978-3-319-44953-1\_30},
+  pdf       = {szmjin-cp16b-preprint.pdf},
+  slides    = {szmjin-cp16b-talk.pdf},
+  doi       = {10.1007/978-3-319-44953-1\_30}
+}
+
+@inproceedings{imms-ecai16,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Gal A. Kaminka and
+               Maria Fox and
+               Paolo Bouquet and
+               Eyke H{\"{u}}llermeier and
+               Virginia Dignum and
+               Frank Dignum and
+               Frank van Harmelen},
+  title     = {Propositional Abduction with Implicit Hitting Sets},
+  booktitle = {22nd European Conference on Artificial Intelligence (ECAI 2016)},
+  series    = {Frontiers in Artificial Intelligence and Applications},
+  volume    = {285},
+  pages     = {1327--1335},
+  publisher = {{IOS} Press},
+  year      = {2016},
+  abstract  = {Logic-based abduction finds important applications in artificial intelligence and related areas. One application example is in finding explanations for observed phenomena. Propositional abduction is a restriction of abduction to the propositional domain, and complexity-wise is in the second level of the polynomial hierarchy. Recent work has shown that exploiting implicit hitting sets and propositional satisfiability (SAT) solvers provides an efficient approach for propositional abduction. This paper investigates this earlier work and proposes a number of algorithmic improvements. These improvements are shown to yield exponential reductions in the number of SAT solver calls. More importantly, the experimental results show significant performance improvements compared to the the best approaches for propositional abduction.},
+  url       = {https://doi.org/10.3233/978-1-61499-672-9-1327},
+  html      = {https://doi.org/10.3233/978-1-61499-672-9-1327},
+  pdf       = {imms-ecai16-preprint.pdf},
+  arxiv     = {1604.08229},
+  doi       = {10.3233/978-1-61499-672-9-1327}
+}
+
+@inproceedings{msimp-jelia16,
+  author    = {Joao Marques{-}Silva and
+               Alexey Ignatiev and
+               Carlos Mencia and
+               Rafael Pe{\~{n}}aloza},
+  editor    = {Loizos Michael and
+               Antonis C. Kakas},
+  title     = {Efficient Reasoning for Inconsistent Horn Formulae},
+  booktitle = {15th European Conference On Logics In Artificial Intelligence (JELIA 2016)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10021},
+  pages     = {336--352},
+  year      = {2016},
+  abstract  = {Horn formulae are widely used in different settings that include logic programming, answer set programming, description logics, deductive databases, and system verification, among many others. One concrete example is concept subsumption in lightweight description logics, which can be reduced to inference in propositional Horn formulae. Some problems require one to reason with inconsistent Horn formulae. This is the case when providing minimal explanations of inconsistency. This paper proposes efficient algorithms for a number of decision, function and enumeration problems related with inconsistent Horn formulae. Concretely, the paper develops efficient algorithms for finding and enumerating minimal unsatisfiable subsets (MUSes), minimal correction subsets (MCSes), but also for computing the lean kernel. The paper also shows the practical importance of some of the proposed algorithms.},
+  url       = {https://doi.org/10.1007/978-3-319-48758-8\_22},
+  html      = {https://doi.org/10.1007/978-3-319-48758-8\_22},
+  pdf       = {msimp-jelia16-preprint.pdf},
+  doi       = {10.1007/978-3-319-48758-8\_22}
+}
+
+@inproceedings{mipms-sat16a,
+  author    = {Carlos Mencia and
+               Alexey Ignatiev and
+               Alessandro Previti and
+               Joao Marques{-}Silva},
+  editor    = {Nadia Creignou and
+               Daniel Le Berre},
+  title     = {{MCS} Extraction with Sublinear Oracle Queries},
+  booktitle = {19th International Conference on Theory and Applications of Satisfiability Testing (SAT 2016)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9710},
+  pages     = {342--360},
+  publisher = {Springer},
+  year      = {2016},
+  abstract  = {Given an inconsistent set of constraints, an often studied problem is to compute an irreducible subset of the constraints which, if relaxed, enable the remaining constraints to be consistent. In the case of unsatisfiable propositional formulas in conjunctive normal form, such irreducible sets of constraints are referred to as Minimal Correction Subsets (MCSes). MCSes find a growing number of applications, including the approximation of maximum satisfiability and as an intermediate step in the enumeration of minimal unsatisfiability. A number of efficient algorithms have been proposed in recent years, which exploit a wide range of insights into the MCS extraction problem. One open question is to find the best worst-case number of calls to a SAT oracle, when the calls to the oracle are kept simple, and given reasonable definitions of simple SAT oracle calls. This paper develops novel algorithms for computing MCSes which, in specific settings, are guaranteed to require asymptotically fewer than linear calls to a SAT oracle, where the oracle calls can be viewed as simple. The experimental results, obtained on existing problem instances, demonstrate that the new algorithms contribute to improving the state of the art.},
+  url       = {https://doi.org/10.1007/978-3-319-40970-2\_21},
+  html      = {https://doi.org/10.1007/978-3-319-40970-2\_21},
+  pdf       = {mipms-sat16a-preprint.pdf},
+  doi       = {10.1007/978-3-319-40970-2\_21}
+}
+
+@inproceedings{amimpms-sat16b,
+  author    = {M. F. Arif and
+               C. Mencia and
+               A. Ignatiev and
+               N. Manthey and
+               R. Pe{\~{n}}aloza and
+               J. Marques{-}Silva},
+  editor    = {Nadia Creignou and
+               Daniel Le Berre},
+  title     = {{BEACON:} An Efficient SAT-Based Tool for Debugging EL+ Ontologies},
+  booktitle = {19th International Conference on Theory and Applications of Satisfiability Testing (SAT 2016)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9710},
+  pages     = {521--530},
+  publisher = {Springer},
+  year      = {2016},
+  abstract  = {Description Logics (DLs) are knowledge representation and reasoning formalisms used in many settings. Among them, the EL family of DLs stands out due to the availability of polynomial-time inference algorithms and its ability to represent knowledge from domains such as medical informatics. However, the construction of an ontology is an error-prone process which often leads to unintended inferences. This paper presents the BEACON tool for debugging EL+ ontologies. BEACON builds on earlier work relating minimal justifications (MinAs) of EL+ ontologies and MUSes of a Horn formula, and integrates state-of-the-art algorithms for solving different function problems in the SAT domain.},
+  url       = {https://doi.org/10.1007/978-3-319-40970-2\_32},
+  html      = {https://doi.org/10.1007/978-3-319-40970-2\_32},
+  pdf       = {amimpms-sat16b-preprint.pdf},
+  doi       = {10.1007/978-3-319-40970-2\_32}
+}
+
+@inproceedings{iplms-cp15,
+  author    = {Alexey Ignatiev and
+               Alessandro Previti and
+               Mark H. Liffiton and
+               Joao Marques{-}Silva},
+  editor    = {Gilles Pesant},
+  title     = {Smallest {MUS} Extraction with Minimal Hitting Set Dualization},
+  booktitle = {21st International Conference on Principles and Practice of Constraint Programming (CP 2015)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9255},
+  pages     = {173--182},
+  publisher = {Springer},
+  year      = {2015},
+  abstract  = {Minimal explanations of infeasibility are of great interest in many domains. In propositional logic, these are referred to as Minimal Unsatisfiable Subsets (MUSes). An unsatisfiable formula can have multiple MUSes, some of which provide more insights than others. Different criteria can be considered in order to identify a good minimal explanation. Among these, the size of an MUS is arguably one of the most intuitive. Moreover, computing the smallest MUS (SMUS) finds several practical applications that include validating the quality of the MUSes computed by MUS extractors and finding equivalent subformulae of smallest size, among others. This paper develops a novel algorithm for computing a smallest MUS, and we show that it outperforms all the previous alternatives pushing the state of the art in SMUS solving. Although described in the context of propositional logic, the presented technique can also be applied to other constraint systems.},
+  url       = {https://doi.org/10.1007/978-3-319-23219-5\_13},
+  html      = {https://doi.org/10.1007/978-3-319-23219-5\_13},
+  pdf       = {iplms-cp15-preprint.pdf},
+  doi       = {10.1007/978-3-319-23219-5\_13}
+}
+
+@inproceedings{msjim-ijcai15a,
+  author    = {Joao Marques{-}Silva and
+               Mikolas Janota and
+               Alexey Ignatiev and
+               Antonio Morgado},
+  editor    = {Qiang Yang and
+               Michael J. Wooldridge},
+  title     = {Efficient Model Based Diagnosis with Maximum Satisfiability},
+  booktitle = {24th International Joint Conference on Artificial Intelligence (IJCAI 2015)},
+  pages     = {1966--1972},
+  publisher = {{AAAI} Press},
+  year      = {2015},
+  abstract  = {Model-Based Diagnosis (MBD) finds a growing number of uses in different settings, which include software fault localization, debugging of spreadsheets, web services, and hardware designs, but also the analysis of biological systems, among many others. Motivated by these different uses, there have been significant improvements made to MBD algorithms in recent years. Nevertheless, the analysis of larger and more complex systems motivates further improvements to existing approaches. This paper proposes a novel encoding of MBD into maximum satisfiability (MaxSAT). The new encoding builds on recent work on using Propositional Satisfiability (SAT) for MBD, but identifies a number of key optimizations that are very effective in practice. The paper also proposes a new set of challenging MBD instances, which can be used for evaluating new MBD approaches. Experimental results obtained on existing and on the new MBD problem instances, show conclusive performance gains over the current state of the art.},
+  url       = {http://ijcai.org/Abstract/15/279},
+  html      = {http://ijcai.org/Abstract/15/279},
+  pdf       = {msjim-ijcai15a-preprint.pdf},
+  slides    = {msjim-ijcai15a-talk.pdf},
+}
+
+@inproceedings{pimms-ijcai15b,
+  author    = {Alessandro Previti and
+               Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Qiang Yang and
+               Michael J. Wooldridge},
+  title     = {Prime Compilation of Non-Clausal Formulae},
+  booktitle = {24th International Joint Conference on Artificial Intelligence (IJCAI 2015)},
+  pages     = {1980--1988},
+  publisher = {{AAAI} Press},
+  year      = {2015},
+  abstract  = {Formula compilation by generation of prime implicates or implicants finds a wide range of applications in AI. Recent work on formula compilation by prime implicate/implicant generation often assumes a Conjunctive/Disjunctive Normal Form (CNF/DNF) representation. However, in many settings propositional formulae are naturally expressed in non-clausal form. Despite a large body of work on compilation of non-clausal formulae, in practice existing approaches can only be applied to fairly small formulae, containing at most a few hundred variables. This paper describes two novel approaches for the compilation of non-clausal formulae either with prime implicants or implicates, that is based on propositional Satisfiability (SAT) solving. These novel algorithms also find application when computing all prime implicates of a CNF formula. The proposed approach is shown to allow the compilation of non-clausal formulae of size significantly larger than existing approaches.},
+  url       = {http://ijcai.org/Abstract/15/281},
+  html      = {http://ijcai.org/Abstract/15/281},
+  pdf       = {pimms-ijcai15b-preprint.pdf}
+}
+
+@inproceedings{ipms-sat15,
+  author    = {Alexey Ignatiev and
+               Alessandro Previti and
+               Joao Marques{-}Silva},
+  editor    = {Marijn Heule and
+               Sean A. Weaver},
+  title     = {SAT-Based Formula Simplification},
+  booktitle = {18th International Conference on Theory and Applications of Satisfiability Testing (SAT 2015)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9340},
+  pages     = {287--298},
+  publisher = {Springer},
+  year      = {2015},
+  abstract  = {The problem of propositional formula minimization can be traced to the mid of the last century, to the seminal work of Quine and McCluskey, with a large body of work ensuing from this seminal work. Given a set of implicants (or implicates) of a formula, the goal for minimization is to find a smallest set of prime implicants (or implicates) equivalent to the original formula. This paper considers the more general problem of computing a smallest prime representation of a non-clausal propositional formula, which we refer to as formula simplification. Moreover, the paper proposes a novel, entirely SAT-based, approach for the formula simplification problem. The original problem addressed by the Quine-McCluskey procedure can thus be viewed as a special case of the problem addressed in this paper. Experimental results, obtained on well-known representative problem instances, demonstrate that a SAT-based approach for formula simplification is a viable alternative to existing implementations of the Quine-McCluskey procedure.},
+  url       = {https://doi.org/10.1007/978-3-319-24318-4\_21},
+  html      = {https://doi.org/10.1007/978-3-319-24318-4\_21},
+  pdf       = {ipms-sat15-preprint.pdf},
+  doi       = {10.1007/978-3-319-24318-4\_21}
+}
+
+@article{mims-jsat14,
+  author    = {Antonio Morgado and
+               Alexey Ignatiev and
+               Joao Marques{-}Silva},
+  title     = {{MSCG:} Robust Core-Guided MaxSAT Solving},
+  journal   = {{Journal on Satisfiability, Boolean Modeling and Computation}},
+  volume    = {9},
+  pages     = {129--134},
+  year      = {2014},
+  abstract  = {Maximum Satisfiability (MaxSAT) is a well-known optimization version of Propositional Satisfiability (SAT) that finds a wide range of relevant practical applications. This work describes and evaluates the Maximum Satisfiability using the Core-Guided approach solver (MSCG), which is a robust MaxSAT solver that participated in the MaxSAT Evaluation 2014. An experimental comparison with state-of-the-art MaxSAT solvers is presented.},
+  url       = {http://satassociation.org/jsat/index.php/jsat/article/view/127},
+  html      = {http://satassociation.org/jsat/index.php/jsat/article/view/127},
+  pdf       = {mims-jsat14-preprint.pdf},
+}
+
+@inproceedings{immlms-ecai14b,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Vasco Manquinho and
+               In{\^{e}}s Lynce and
+               Joao Marques{-}Silva},
+  editor    = {Torsten Schaub and
+               Gerhard Friedrich and
+               Barry O'Sullivan},
+  title     = {Progression in Maximum Satisfiability},
+  booktitle = {21st European Conference on Artificial Intelligence (ECAI 2014)},
+  series    = {Frontiers in Artificial Intelligence and Applications},
+  volume    = {263},
+  pages     = {453--458},
+  publisher = {{IOS} Press},
+  year      = {2014},
+  abstract  = {Maximum Satisfiability (MaxSAT) is a well-known optimization version of Propositional Satisfiability (SAT), that finds a wide range of relevant practical applications. Despite the significant progress made in MaxSAT solving in recent years, many practically relevant problem instances require prohibitively large run times, and many cannot simply be solved with existing algorithms. One approach for solving MaxSAT is based on iterative SAT solving, which may optionally be guided by unsatisfiable cores. A difficulty with this class of algorithms is the possibly large number of times a SAT solver is called, e.g. for instances with very large clause weights. This paper proposes the use of geometric progressions to tackle this issue, thus allowing, for the vast majority of problem instances, to reduce the number of calls to the SAT solver. The new approach is also shown to be applicable to core-guided MaxSAT algorithms. Experimental results, obtained on a large number of problem instances, show gains when compared to state-of-the-art implementations of MaxSAT algorithms.},
+  url       = {https://doi.org/10.3233/978-1-61499-419-0-453},
+  html      = {https://doi.org/10.3233/978-1-61499-419-0-453},
+  pdf       = {immlms-ecai14b-preprint.pdf},
+  doi       = {10.3233/978-1-61499-419-0-453}
+}
+
+@inproceedings{msimml-ecai14a,
+  author    = {Joao Marques{-}Silva and
+               Alexey Ignatiev and
+               Antonio Morgado and
+               Vasco Manquinho and
+               In{\^{e}}s Lynce},
+  editor    = {Torsten Schaub and
+               Gerhard Friedrich and
+               Barry O'Sullivan},
+  title     = {Efficient Autarkies},
+  booktitle = {21st European Conference on Artificial Intelligence (ECAI 2014)},
+  series    = {Frontiers in Artificial Intelligence and Applications},
+  volume    = {263},
+  pages     = {603--608},
+  publisher = {{IOS} Press},
+  year      = {2014},
+  abstract  = {Autarkies are partial truth assignments that satisfy all clauses having literals in the assigned variables. Autarkies provide important information in the analysis of unsatisfiable formulas. Indeed, clauses satisfied by autarkies cannot be included in minimal explanations or in minimal corrections of unsatisfiability. Computing the maximum autarky allows identifying all such clauses. In recent years, a number of alternative approaches have been proposed for computing a maximum autarky. This paper develops new models for representing autarkies, and proposes new algorithms for computing the maximum autarky. Experimental results, obtained on a large number of problem instances, show orders of magnitude performance improvements over existing approaches, and solving instances that could not otherwise be solved.},
+  url       = {https://doi.org/10.3233/978-1-61499-419-0-603},
+  html      = {https://doi.org/10.3233/978-1-61499-419-0-603},
+  pdf       = {msimml-ecai14a-preprint.pdf},
+  doi       = {10.3233/978-1-61499-419-0-603}
+}
+
+@inproceedings{ijms-icse14,
+  author    = {Alexey Ignatiev and
+               Mikolas Janota and
+               Joao Marques{-}Silva},
+  editor    = {Pankaj Jalote and
+               Lionel C. Briand and
+               Andr{\'{e}} van der Hoek},
+  title     = {Towards efficient optimization in package management systems},
+  booktitle = {36th International Conference on Software Engineering (ICSE 2014)},
+  pages     = {745--755},
+  publisher = {{ACM}},
+  year      = {2014},
+  abstract  = {Package management as a means of reuse of software artifacts has become extremely popular, most notably in Linux distributions. At the same time, successful package management brings about a number of computational challenges. Whenever a user requires a new package to be installed, a package manager not only installs the new package but it might also install other packages or uninstall some old ones in order to respect dependencies and conflicts of the packages. Coming up with a new configuration of packages is computationally challenging. It is in particular complex when we also wish to optimize for user preferences, such as that the resulting package configuration should not differ too much from the original one. A number of exact approaches for solving this problem have been proposed in recent years. These approaches, however, do not have guaranteed runtime due to the high computational complexity of the problem. This paper addresses this issue by devising a hybrid approach that integrates exact solving with approximate solving by invoking the approximate part whenever the solver is running out of time. Experimental evaluation shows that this approach enables returning high-quality package configurations with rapid response time.},
+  url       = {https://doi.org/10.1145/2568225.2568306},
+  html      = {https://doi.org/10.1145/2568225.2568306},
+  pdf       = {ijms-icse14-preprint.pdf},
+  slides    = {ijms-icse14-talk.pdf},
+  doi       = {10.1145/2568225.2568306}
+}
+
+@inproceedings{imms-sat14,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Joao Marques{-}Silva},
+  editor    = {Carsten Sinz and
+               Uwe Egly},
+  title     = {On Reducing Maximum Independent Set to Minimum Satisfiability},
+  booktitle = {17th International Conference on Theory and Applications of Satisfiability Testing (SAT 2014)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8561},
+  pages     = {103--120},
+  publisher = {Springer},
+  year      = {2014},
+  abstract  = {Maximum Independent Set (MIS) is a well-known NP-hard graph problem, tightly related with other well known NP-hard graph problems, namely Minimum Vertex Cover (MVC) and Maximum Clique (MaxClq). This paper introduces a novel reduction of MIS into Minimum Satisfiability (MinSAT), thus, providing an alternative approach for solving MIS. The reduction naturally maps the vertices of a graph into clauses, without requiring the inclusion of hard clauses. Moreover, it is shown that the proposed reduction uses fewer variables and clauses than the existing alternative of mapping MIS into Maximum Satisfiability (MaxSAT). The paper develops a number of optimizations to the basic reduction, which significantly reduce the total number of variables used. The experimental evaluation considered the reductions described in the paper as well as existing state-of-the-art approaches. The results show that the proposed approaches based on MinSAT are competitive with existing approaches.},
+  url       = {https://doi.org/10.1007/978-3-319-09284-3\_9},
+  html      = {https://doi.org/10.1007/978-3-319-09284-3\_9},
+  pdf       = {imms-sat14-preprint.pdf},
+  slides    = {imms-sat14-talk.pdf},
+  doi       = {10.1007/978-3-319-09284-3\_9}
+}
+
+@inproceedings{impms-lpar13,
+  author    = {Alexey Ignatiev and
+               Antonio Morgado and
+               Jordi Planes and
+               Joao Marques{-}Silva},
+  editor    = {Kenneth L. McMillan and
+               Aart Middeldorp and
+               Andrei Voronkov},
+  title     = {Maximal Falsifiability: Definitions, Algorithms, and Applications},
+  booktitle = {19th International Conference on Logic for Programming Artificial Intelligence and Reasoning (LPAR 2013)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8312},
+  pages     = {439--456},
+  publisher = {Springer},
+  year      = {2013},
+  abstract  = {Similarly to Maximum Satisfiability (MaxSAT), Minimum Satisfiability (MinSAT) is an optimization extension of the Boolean Satisfiability (SAT) decision problem. In recent years, both problems have been studied in terms of exact and approximation algorithms. In addition, the MaxSAT problem has been characterized in terms ofMaximal Satisfiable Subsets (MSSes) andMinimal Correction Subsets (MCSes), as well as Minimal Unsatisfiable Subsets (MUSes) and minimal hitting set dualization. However, and in contrast with MaxSAT, no such characterizations exist for MinSAT. This paper addresses this issue by casting the MinSAT problem in a more general framework. The paper studies Maximal Falsifiability, the problem of computing a subset-maximal set of clauses that can be simultaneously falsified, and shows that MinSAT corresponds to the complement of a largest subset-maximal set of simultaneously falsifiable clauses, i.e. the solution of the Maximum Falsifiability (MaxFalse) problem. Additional contributions of the paper include novel algorithms for Maximum and Maximal Falsifiability, as well as minimal hitting set dualization results for the MaxFalse problem. Moreover, the proposed algorithms are validated on practical instances.},
+  url       = {https://doi.org/10.1007/978-3-642-45221-5\_30},
+  html      = {https://doi.org/10.1007/978-3-642-45221-5\_30},
+  pdf       = {impms-lpar13-preprint.pdf},
+  slides    = {impms-lpar13-talk.pdf},
+  doi       = {10.1007/978-3-642-45221-5\_30}
+}
+
+@inproceedings{ijms-sat13,
+  author    = {Alexey Ignatiev and
+               Mikolas Janota and
+               Joao Marques{-}Silva},
+  editor    = {Matti J{\"{a}}rvisalo and
+               Allen Van Gelder},
+  title     = {Quantified Maximum Satisfiability: {A} Core-Guided Approach},
+  booktitle = {16th International Conference on Theory and Applications of Satisfiability Testing (SAT 2013)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7962},
+  pages     = {250--266},
+  publisher = {Springer},
+  year      = {2013},
+  abstract  = {In recent years, there have been significant improvements in algorithms both for Quantified Boolean Formulas (QBF) and for Maximum Satisfiability (MaxSAT). This paper studies the problem of solving quantified formulas subject to a cost function, and considers the problem in a quantified MaxSAT setting. Two approaches are investigated. One is based on relaxing the soft clauses and performing a linear search on the cost function. The other approach, which is the main contribution of the paper, is inspired by recent work on MaxSAT, and exploits the iterative identification of unsatisfiable cores. The paper investigates the application of these approaches to the concrete problem of computing smallest minimal unsatisfiable subformulas (SMUS), a decision version of which is a well-known problem in the second level of the polynomial hierarchy. Experimental results, obtained on representative problem instances, indicate that the core-guided approach for the SMUS problem outperforms the use of linear search over the values of the cost function. More significantly, the core-guided approach also outperforms the state-of-the-art SMUS extractor Digger.},
+  url       = {https://doi.org/10.1007/978-3-642-39071-5\_19},
+  html      = {https://doi.org/10.1007/978-3-642-39071-5\_19},
+  pdf       = {ijms-sat13-preprint.pdf},
+  slides    = {ijms-sat13-talk.pdf},
+  doi       = {10.1007/978-3-642-39071-5\_19}
+}
+
+@inproceedings{is-sat11,
+  author    = {Alexey Ignatiev and
+               Alexander A. Semenov},
+  editor    = {Karem A. Sakallah and
+               Laurent Simon},
+  title     = {{DPLL+ROBDD} Derivation Applied to Inversion of Some Cryptographic
+               Functions},
+  booktitle = {14th International Conference on Theory and Applications of Satisfiability Testing (SAT 2011)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {6695},
+  pages     = {76--89},
+  publisher = {Springer},
+  year      = {2011},
+  abstract  = {The paper presents logical derivation algorithms that can be applied to inversion of polynomially computable discrete functions. The proposed approach is based on the fact that it is possible to organize DPLL derivation on a small subset of variables appeared in a CNF which encodes the algorithm computing the function. The experimental results showed that arrays of conflict clauses generated by this mode of derivation, as a rule, have efficient ROBDD representations. This fact is the departing point of development of a hybrid DPLL+ROBDD derivation strategy: derivation techniques for ROBDD representations of conflict databases are the same as those ones in common DPLL (variable assignments and unit propagation). In addition, compact ROBDD representations of the conflict databases can be shared effectively in a distributed computing environment.},
+  url       = {https://doi.org/10.1007/978-3-642-21581-0\_8},
+  html      = {https://doi.org/10.1007/978-3-642-21581-0\_8},
+  pdf       = {is-sat11-preprint.pdf},
+  slides    = {is-sat11-talk.pdf},
+  doi       = {10.1007/978-3-642-21581-0\_8}
+}
+
