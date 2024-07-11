@@ -108,6 +108,529 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <article class="post-content publications clearfix">
     
+<h3 class="year">2024</h3>
+<ol class="bibliography"><li>
+
+<div id="iisms-aaai24">
+  
+    <span class="title">Delivering Inflated Explanations</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                
+                  <a href="https://yizza.gitlab.io/" target="_blank">Yacine Izza</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <em>Alexey Ignatiev</em>,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="https://people.eng.unimelb.edu.au/pstuckey/" target="_blank">Peter J. Stuckey</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and <a href="https://jpmarquessilva.github.io/" target="_blank">Joao Marques-Silva</a>
+              
+            
+          
+        
+      
+    </span>
+
+    
+      
+        <span class="periodical">
+          <i>
+          38th AAAI Conference on Artificial Intelligence (AAAI 2024),
+          
+            pp.&thinsp;12744–12753,
+          
+          
+            2024
+          
+          </i>
+        </span>
+      
+    
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+    [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29170" target="_blank">HTML</a>]
+  
+  
+    [<a href="https://alexeyignatiev.github.io/assets/pdf/iisms-aaai24-preprint.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>In the quest for Explainable Artificial Intelligence (XAI) one of the questions that frequently arises given a decision made by an AI system is, “why was the decision made in this way?” Formal approaches to explainability build a formal model of the AI system and use this to reason about the properties of the system. Given a set of feature values for an instance to be explained, and a resulting decision, a formal abductive explanation is a set of features, such that if they take the given value will always lead to the same decision. This explanation is useful, it shows that only some features were used in making the final decision. But it is narrow, it only shows that if the selected features take their given values the decision is unchanged. It is possible that some features may change values and still lead to the same decision. In this paper we formally define inflated explanations which is a set of features, and for each feature a set of values (always including the value of the instance being explained), such that the decision will remain unchanged, for any of the values allowed for any of the features in the (inflated) abductive explanation. Inflated formal explanations are more informative than common abductive explanations since e.g. they allow us to see if the exact value of a feature is important, or it could be any nearby value. Overall they allow us to better understand the role of each feature in the decision. We show that we can compute inflated explanations for not that much greater cost than abductive explanations, and that we can extend duality results for abductive explanations also to inflated explanations.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="iisms-aaai25">
+  
+    <span class="title">SuperStack: Superoptimization of Stack-Bytecode via Greedy, Constraint-Based, and SAT Techniques</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                
+                  <a href="https://scholar.google.com/citations?user=2Z4PS38AAAAJ&amp;hl=en&amp;oi=ao" target="_blank">E. Albert</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  M. Garcia Banda,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="https://scholar.google.com/citations?hl=en&amp;user=O4mHeL0AAAAJ" target="_blank">A. Hernández-Cerezo</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <em>A. Ignatiev</em>,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="https://scholar.google.com/citations?hl=en&amp;user=0X32dLsAAAAJ" target="_blank">A. Rubio</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and <a href="https://people.eng.unimelb.edu.au/pstuckey/" target="_blank">P. J. Stuckey</a>
+              
+            
+          
+        
+      
+    </span>
+
+    
+      
+        <span class="periodical">
+          <i>Programming Language Design and Implementation (PLDI 2024)</i>
+        </span>
+        <span class="periodical">
+          <i>
+          Proceedings of the ACM on Programming Languages,
+          
+            vol.&thinsp;8,
+          
+          
+            pp.&thinsp;1437–1462,
+          
+          
+            2024
+          
+          </i>
+        </span>
+      
+    
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+    [<a href="https://dl.acm.org/doi/10.1145/3656435" target="_blank">HTML</a>]
+  
+  
+    [<a href="https://alexeyignatiev.github.io/assets/pdf/abhcirs-pldi24-preprint.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Given a loop-free sequence of instructions, superoptimization techniques use a constraint solver to search for an equivalent sequence that is optimal for a desired objective. The complexity of the search grows exponentially with the length of the solution being constructed, and the problem becomes intractable for large sequences of instructions. This paper presents a new approach to superoptimizing stack-bytecode via three novel components: (1) a greedy algorithm to refine the bound on the length of the optimal solution; (2) a new representation of the optimization problem as a set of weighted soft clauses in MaxSAT; (3) a series of domain-specific dominance and redundant constraints to reduce the search space for optimal solutions. We have developed a tool, named SuperStack, which can be used to find optimal code translations of modern stack-based bytecode, namely WebAssembly or Ethereum bytecode. Experimental evaluation on more than 500,000 sequences shows the proposed greedy, constraint-based and SAT combination is able to greatly increase optimization gains achieved by existing superoptimizers and reduce to at least a fourth the optimization time.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="yfits-tosem24">
+  
+    <span class="title">A Formal Explainer for Just-In-Time Defect Predictions</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                
+                  <a href="https://jinqiang-yu.github.io/" target="_blank">Jinqiang Yu</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="https://michaelfu1998-create.github.io/" target="_blank">Michael Fu</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <em>Alexey Ignatiev</em>,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="http://chakkrit.com/" target="_blank">Chakkrit Tantithamthavorn</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and <a href="https://people.eng.unimelb.edu.au/pstuckey/" target="_blank">Peter J. Stuckey</a>
+              
+            
+          
+        
+      
+    </span>
+
+    
+      <span class="periodical">
+        <i>
+        
+          ACM Transactions on Software Engineering and Methodology,
+          
+            
+              vol.&thinsp;xx,
+            
+          
+        
+        
+          pp.&thinsp;xx–xx,
+        
+        
+          2024
+        
+        </i>
+      </span>
+    
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+    [<a href="https://dl.acm.org/doi/abs/10.1145/3664809" target="_blank">HTML</a>]
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Just-In-Time (JIT) defect prediction has been proposed to help teams to prioritize the limited resources on the most risky commits (or pull requests), yet it remains largely a black-box, whose predictions are not explainable nor actionable to practitioners. Thus, prior studies have applied various model-agnostic techniques to explain the predictions of JIT models. Yet, explanations generated from existing model-agnostic techniques are still not formally sound, robust, and actionable. In this paper, we propose FoX, a Formal eXplainer for JIT Defect Prediction, which builds on formal reasoning about the behaviour of JIT defect prediction models and hence is able to provide provably correct explanations, which are additionally guaranteed to be minimal. Our experimental results show that FoX is able to efficiently generate provably-correct, robust, and actionable explanations while existing model-agnostic techniques cannot. Our survey study with 54 software practitioners provides valuable insights into the usefulness and trustworthiness of our FoX approach. 86% of participants agreed that our approach is useful, while 74% of participants found it trustworthy. Thus, this paper serves as an important stepping stone towards trustable explanations for JIT models to help domain experts and practitioners better understand why a commit is predicted as defective and what to do to mitigate the risk.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="yfis-sat24">
+  
+    <span class="title">Anytime Approximate Formal Feature Attribution</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                
+                  <a href="https://jinqiang-yu.github.io/" target="_blank">Jinqiang Yu</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  <a href="https://scholar.google.com/citations?hl=en&amp;user=8gscg6AAAAAJ" target="_blank">Graham Farr</a>,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <em>Alexey Ignatiev</em>,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and <a href="https://people.eng.unimelb.edu.au/pstuckey/" target="_blank">Peter J. Stuckey</a>
+              
+            
+          
+        
+      
+    </span>
+
+    
+      
+        <span class="periodical">
+          <i>27th International Conference on Theory and Applications of Satisfiability Testing (SAT 2024)</i>
+        </span>
+        <span class="periodical">
+          <i>
+          LIPIcs,
+          
+            vol.&thinsp;305,
+          
+          
+            pp.&thinsp;28:1–28:23,
+          
+          
+            2024
+          
+          </i>
+        </span>
+      
+    
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+    [<a href="https://alexeyignatiev.github.io/assets/pdf/yfis-sat24-preprint.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Widespread use of artificial intelligence (AI) algorithms and machine learning (ML) models on the one hand and a number of crucial issues pertaining to them warrant the need for explainable artificial intelligence (XAI). A key explainability question is: given this decision was made, what are the input features which contributed to the decision? Although a range of XAI approaches exist to tackle this problem, most of them have significant limitations. Heuristic XAI approaches suffer from the lack of quality guarantees, and often try to approximate Shapley values, which is not the same as explaining which features contribute to a decision. A recent alternative is so-called formal feature attribution (FFA), which defines feature importance as the fraction of formal abductive explanations (AXp’s) containing the given feature. This measures feature importance from the view of formally reasoning about the model’s behavior. Namely, given a system of constraints logically representing the ML model of interest, computing an AXp requires finding a minimal unsatisfiable subset (MUS) of the system. It is challenging to compute FFA using its definition because that involves counting over all AXp’s (equivalently, counting over MUSes), although one can approximate it. Based on these results, this paper makes several contributions. First, it gives compelling evidence that computing FFA is intractable, even if the set of contrastive formal explanations (CXp’s), which correspond to minimal correction subsets (MCSes) of the logical system, is provided, by proving that the problem is #P-hard. Second, by using the duality between MUSes and MCSes, it proposes an efficient heuristic to switch from MCS enumeration to MUS enumeration on-the-fly resulting in an adaptive explanation enumeration algorithm effectively approximating FFA in an anytime fashion. Finally, experimental results obtained on a range of widely used datasets demonstrate the effectiveness of the proposed FFA approximation approach in terms of the error of FFA approximation as well as the number of explanations computed and their diversity given a fixed time limit.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="itk-sat24">
+  
+    <span class="title">Towards Universally Accessible SAT Technology</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                <em>Alexey Ignatiev</em>,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                  Zi Li Tan,
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Christos Karamanos
+              
+            
+          
+        
+      
+    </span>
+
+    
+      
+        <span class="periodical">
+          <i>27th International Conference on Theory and Applications of Satisfiability Testing (SAT 2024)</i>
+        </span>
+        <span class="periodical">
+          <i>
+          LIPIcs,
+          
+            vol.&thinsp;305,
+          
+          
+            pp.&thinsp;4:1–4:11,
+          
+          
+            2024
+          
+          </i>
+        </span>
+      
+    
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+    [<a href="https://alexeyignatiev.github.io/assets/pdf/itk-sat24-preprint.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Boolean satisfiability (SAT) solvers are a family of highly efficient reasoning engines, which are frequently used for solving a large and diverse variety of practical challenges. This applies to multidisciplinary problems belonging to the class NP but also those arising at higher levels of the polynomial hierarchy. Unfortunately, encoding a problem of user’s interest to a (series of) propositional formula(s) in conjunctive normal form (CNF), let alone dealing with a SAT solver, is rarely a simple task even for an experienced SAT practitioner. This situation gets aggravated further when the user has little to no knowledge on the operation of the modern SAT solving technology. In 2018, the PySAT framework was proposed to address the issue of fast and "painless" prototyping with SAT solvers in Python allowing researchers to get SAT-based solutions to their problems without investing substantial time in the development process and yet sacrificing only a little in terms of performance. Since then, PySAT has proved a useful instrument for solving a wide range of practical problems and is now a critical package for the PyPI infrastructure. In the meantime, there have been advances in SAT solving and enhancements to PySAT functionality to extend its modelling and solving capabilities in order to make modern SAT technology accessible and deployable on a massive scale. This paper provides a high-level overview of the current architecture of PySAT and some of its capabilities including arbitrary Boolean formula manipulation, CNF preprocessing, and support for external user-defined propagators.</p>
+  </span>
+  
+</div>
+</li></ol>
+
 <h3 class="year">2023</h3>
 <ol class="bibliography"><li>
 
