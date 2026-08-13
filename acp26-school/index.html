@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>ACP 2026 School — Workshops</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --background: #f5f7fb;
+      --card: #fff;
+      --text: #172033;
+      --muted: #5b6475;
+      --border: #dce2ec;
+      --button: #e8f0ff;
+      --button-text: #1659b7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1117;
+        --card: #161b22;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --border: #30363d;
+        --button: #1d3557;
+        --button-text: #9ecbff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    main { width: min(960px, calc(100% - 2rem)); margin: 3rem auto; }
+    header { margin-bottom: 2.5rem; text-align: center; }
+    h1 { margin-bottom: .4rem; font-size: clamp(2rem, 6vw, 3rem); }
+    header p { color: var(--muted); }
+    .workshops { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .workshop {
+      padding: 2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+    .workshop h2 { margin: 0 0 .35rem; }
+    .workshop h3 {
+      min-height: 2.8rem;
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+    .buttons { display: flex; flex-direction: column; gap: .8rem; }
+    .button {
+      display: block;
+      padding: .75rem 1rem;
+      color: var(--button-text);
+      background: var(--button);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button:hover { filter: brightness(1.06); }
+    @media (max-width: 640px) {
+      .workshops { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>ACP 2026 School</h1>
+      <p>Slides, exercises, and solutions.</p>
+    </header>
+
+    <div class="workshops">
+      <section class="workshop">
+        <h2>Workshop 1</h2>
+        <h3>From DPLL to CDCL</h3>
+        <div class="buttons">
+          <a class="button" href="slides1.pdf">Open slides</a>
+          <a class="button" href="workshop1/">Open scaffold</a>
+          <a class="button" href="workshop1-sol/">Open solution</a>
+        </div>
+      </section>
+
+      <section class="workshop">
+        <h2>Workshop 2</h2>
+        <h3>Modelling and Solving Problems with SAT</h3>
+        <div class="buttons">
+          <a class="button" href="slides2.pdf">Open slides</a>
+          <a class="button" href="workshop2/">Open scaffold</a>
+          <a class="button" href="workshop2-sol/">Open solution</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
